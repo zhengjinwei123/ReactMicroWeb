@@ -1,0 +1,11 @@
+<log created="2021/03/02 10:00:21.926515">
+[2021/03/02 10:00:21.926515] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:31[0m) [35mrequest: /api/user/logout|map[][0m
+[2021/03/02 10:00:21.926515] [EROR] ([31mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/net/response.go:38[0m) [31m{"data":"user has not login","ret":-1}[0m
+[2021/03/02 10:00:24.779021] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:31[0m) [35mrequest: /api/user/login|map[][0m
+[2021/03/02 10:00:24.780021] [EROR] ([31mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/net/response.go:38[0m) [31m{"data":"username not exists","ret":-1}[0m
+[2021/03/02 10:00:40.017609] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:31[0m) [35mrequest: /api/user/logout|map[][0m
+[2021/03/02 10:00:40.017609] [EROR] ([31mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/net/response.go:38[0m) [31m{"data":"user has not login","ret":-1}[0m
+[2021/03/02 10:11:50.498566] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:31[0m) [35mrequest: /api/user/login|map[][0m
+[2021/03/02 10:11:50.499565] [EROR] ([31mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/net/response.go:38[0m) [31m{"data":"username not exists","ret":-1}[0m
+[2021/03/02 10:15:24.909780] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:90[0m) [32mcatch signal interrupt, server ready to shutdown.[0m
+</log>

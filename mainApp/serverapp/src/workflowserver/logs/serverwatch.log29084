@@ -1,0 +1,22 @@
+<log created="2021/03/02 18:25:50.318715">
+[2021/03/02 18:25:50.326712] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/manager/menumgr/menumgr.go:148[0m) [35mhaha map[100:[101 102] 900:[901]]|map[100:0xc00006c4b0 101:0xc00006c500 102:0xc00006c550 900:0xc00006c5a0 901:0xc00006c5f0][0m
+[2021/03/02 18:25:50.326712] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/manager/menumgr/menumgr.go:148[0m) [35mhaha map[100:[101] 900:[901]]|map[100:0xc00006c4b0 101:0xc00006c500 102:0xc00006c550 900:0xc00006c5a0 901:0xc00006c5f0][0m
+[2021/03/02 18:25:50.326712] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/manager/menumgr/menumgr.go:148[0m) [35mhaha map[]|map[100:0xc00006c4b0 101:0xc00006c500 102:0xc00006c550 900:0xc00006c5a0 901:0xc00006c5f0][0m
+[2021/03/02 18:25:50.326712] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/manager/menumgr/menumgr.go:148[0m) [35mhaha map[]|map[100:0xc00006c4b0 101:0xc00006c500 102:0xc00006c550 900:0xc00006c5a0 901:0xc00006c5f0][0m
+[2021/03/02 18:25:50.326712] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/manager/menumgr/menumgr.go:103[0m) [35mmenu init success[0m
+[2021/03/02 18:25:50.327714] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:89[0m) [32mserver start at :8801[0m
+[2021/03/02 18:25:56.053523] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:30[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/02 18:25:56.659180] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:30[0m) [35mrequest: /api/user/all_menus|map[][0m
+[2021/03/02 18:26:01.005354] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:30[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/02 18:26:01.308711] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:30[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/02 18:26:03.392996] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:30[0m) [35mrequest: /api/user/all_menus|map[][0m
+[2021/03/02 18:26:07.866250] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:30[0m) [35mrequest: /api/user/all_menus|map[][0m
+[2021/03/02 18:26:13.063084] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:30[0m) [35mrequest: /api/user/all_menus|map[][0m
+[2021/03/02 18:26:16.644099] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:30[0m) [35mrequest: /api/group/update_menus|map[group_id:[4] menus:[100,102]][0m
+[2021/03/02 18:26:16.646103] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/manager/menumgr/menumgr.go:148[0m) [35mhaha map[100:[102]]|map[100:0xc00006c4b0 101:0xc00006c500 102:0xc00006c550 900:0xc00006c5a0 901:0xc00006c5f0][0m
+[2021/03/02 18:26:17.004980] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:30[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/02 18:26:17.711303] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:30[0m) [35mrequest: /api/user/all_menus|map[][0m
+[2021/03/02 18:26:20.841120] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:30[0m) [35mrequest: /api/group/update_menus|map[group_id:[4] menus:[100,102]][0m
+[2021/03/02 18:26:20.842123] [EROR] ([31mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/net/response.go:38[0m) [31m{"data":"data not changed","ret":-1}[0m
+[2021/03/02 18:30:24.719737] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:99[0m) [32mcatch signal interrupt, server ready to shutdown.[0m
+</log>

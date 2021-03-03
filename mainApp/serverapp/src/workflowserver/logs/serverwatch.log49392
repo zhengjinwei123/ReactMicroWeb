@@ -1,0 +1,6 @@
+<log created="2021/03/02 11:00:58.455629">
+[2021/03/02 11:00:58.455629] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:31[0m) [35mrequest: /api/user/login|map[password:[e10adc3949ba59abbe56e057f20f883e] username:[admin]][0m
+[2021/03/02 11:00:58.455629] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/userservice/user.go:25[0m) [35madmin e10adc3949ba59abbe56e057f20f883e[0m
+[2021/03/02 11:00:58.455629] [EROR] ([31mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/net/response.go:38[0m) [31m{"data":"user has login","ret":-1}[0m
+[2021/03/02 11:01:16.767894] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:92[0m) [32mcatch signal interrupt, server ready to shutdown.[0m
+</log>

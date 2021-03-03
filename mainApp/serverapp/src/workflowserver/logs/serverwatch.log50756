@@ -1,0 +1,8 @@
+<log created="2021/03/02 16:27:36.995194">
+[2021/03/02 16:27:36.995194] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:49[0m) [35msss 10.235.102.249:6389[0m
+[2021/03/02 16:27:36.996196] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/manager/menumgr/menumgr.go:101[0m) [35mmenu init success[0m
+[2021/03/02 16:27:37.002194] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:91[0m) [32mserver start at :8801[0m
+[2021/03/02 16:27:43.960006] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:30[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/02 16:28:55.193435] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:30[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/02 16:30:17.338168] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:101[0m) [32mcatch signal interrupt, server ready to shutdown.[0m
+</log>

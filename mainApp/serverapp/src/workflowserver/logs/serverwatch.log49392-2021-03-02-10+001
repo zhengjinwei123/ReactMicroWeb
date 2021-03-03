@@ -1,0 +1,6 @@
+<log created="2021/03/02 10:52:22.572687">
+[2021/03/02 10:52:22.574684] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/manager/menumgr/menumgr.go:101[0m) [35mmenu init success[0m
+[2021/03/02 10:52:22.578684] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:82[0m) [32mserver start at :8801[0m
+[2021/03/02 10:52:28.294329] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:31[0m) [35mrequest: /api/user/login|map[password:[e10adc3949ba59abbe56e057f20f883e] username:[admin]][0m
+[2021/03/02 10:52:28.294329] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/userservice/user.go:25[0m) [35madmin e10adc3949ba59abbe56e057f20f883e[0m
+</log>

@@ -1,0 +1,9 @@
+<log created="2021/03/02 18:24:06.860733">
+[2021/03/02 18:24:06.867718] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/manager/menumgr/menumgr.go:148[0m) [35mhaha map[100:[101] 900:[901]]|map[100:0xc0000aa320 101:0xc0000aa370 102:0xc0000aa3c0 900:0xc0000aa410 901:0xc0000aa460][0m
+[2021/03/02 18:24:06.867718] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/manager/menumgr/menumgr.go:148[0m) [35mhaha map[100:[101] 900:[901]]|map[100:0xc0000aa320 101:0xc0000aa370 102:0xc0000aa3c0 900:0xc0000aa410 901:0xc0000aa460][0m
+[2021/03/02 18:24:06.867718] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/manager/menumgr/menumgr.go:148[0m) [35mhaha map[]|map[100:0xc0000aa320 101:0xc0000aa370 102:0xc0000aa3c0 900:0xc0000aa410 901:0xc0000aa460][0m
+[2021/03/02 18:24:06.867718] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/manager/menumgr/menumgr.go:148[0m) [35mhaha map[]|map[100:0xc0000aa320 101:0xc0000aa370 102:0xc0000aa3c0 900:0xc0000aa410 901:0xc0000aa460][0m
+[2021/03/02 18:24:06.867718] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/manager/menumgr/menumgr.go:103[0m) [35mmenu init success[0m
+[2021/03/02 18:24:06.869717] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:89[0m) [32mserver start at :8801[0m
+[2021/03/02 18:25:43.333362] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:99[0m) [32mcatch signal interrupt, server ready to shutdown.[0m
+</log>

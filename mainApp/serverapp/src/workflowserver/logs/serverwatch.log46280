@@ -1,0 +1,16 @@
+<log created="2021/03/02 17:12:11.947842">
+[2021/03/02 17:12:11.948842] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:49[0m) [35msss 10.235.102.249:6389[0m
+[2021/03/02 17:12:11.949853] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/manager/menumgr/menumgr.go:101[0m) [35mmenu init success[0m
+[2021/03/02 17:12:11.956840] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:91[0m) [32mserver start at :8801[0m
+[2021/03/02 17:12:15.807596] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:30[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/02 17:12:17.306815] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:30[0m) [35mrequest: /api/user/all_menus|map[][0m
+[2021/03/02 17:12:32.670600] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:30[0m) [35mrequest: /api/group/add|map[group_name:[管理员2] menus:[100,101,102,900,901]][0m
+[2021/03/02 17:12:32.671601] [EROR] ([31mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/net/response.go:38[0m) [31m{"data":"Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'desc='管理员2'' at line 1","ret":-1}[0m
+[2021/03/02 17:12:37.081611] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:30[0m) [35mrequest: /api/group/add|map[group_name:[管理员2] menus:[100,101,102,900,901]][0m
+[2021/03/02 17:12:37.082609] [EROR] ([31mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/net/response.go:38[0m) [31m{"data":"Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'desc='管理员2'' at line 1","ret":-1}[0m
+[2021/03/02 17:12:45.939947] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:30[0m) [35mrequest: /api/group/add|map[group_name:[zjw] menus:[100,101,102,900,901]][0m
+[2021/03/02 17:12:45.940947] [EROR] ([31mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/net/response.go:38[0m) [31m{"data":"Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'desc='zjw'' at line 1","ret":-1}[0m
+[2021/03/02 17:13:10.568647] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:30[0m) [35mrequest: /api/group/add|map[group_name:[zjw] menus:[100,101,102,900,901]][0m
+[2021/03/02 17:13:10.569647] [EROR] ([31mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/net/response.go:38[0m) [31m{"data":"Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'desc='zjw'' at line 1","ret":-1}[0m
+[2021/03/02 17:14:07.752762] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:101[0m) [32mcatch signal interrupt, server ready to shutdown.[0m
+</log>
