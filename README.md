@@ -25,12 +25,14 @@
 
 ```
 1. cd workflowApp
-2. yarn start
+2. yarn install
+3. yarn start
 ```
 
 ### 3. 启动主应用
 
 ```
 1. cd mainApp
-2. yarn start
+2. yarn install
+3. yarn start
 ```
