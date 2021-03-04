@@ -1,4 +1,4 @@
-import React, {useState, useEffect } from "react";
+import React, {useState, useEffect, useRef } from "react";
 import { withRouter } from "react-router-dom";
 import { Layout, PageHeader, Tag, Dropdown , Popover, Menu, BackTop, Avatar, Button, Breadcrumb} from 'antd';
 import {AntdIconComponent} from "../helper/index.jsx"
@@ -7,8 +7,10 @@ import { Helmet } from "react-helmet"
 import { logout, setUserLogout, checkUserHasLogin } from "../../services/user"
 import { redirectLogin, redirectTo } from "../../utils/util"
 import _ from "lodash"
+import { FormattedMessage  } from 'react-intl'
 
-import {GetUserMenus} from "../../services/user"
+import {GetLoginUserInfo} from "../../services/user"
+import UpdatePasswordModal from "../UpdatePasswordModal/index"
 
 
 
@@ -94,10 +96,10 @@ const MyLayout = (props) => {
         return;
     }
 
-
     const [menus, setMenus] = useState(props.userinfo.menus)
     const [collapsed, setCollapsed] = useState(false)
     const [defaultSelectMenuKey, setDefaultSelectMenuKey] = useState(menus && menus.length ? menus[0].f.id : 0)
+    const updatePasswordModalRef = useRef(null)
 
     const userHasPageAuth = (menus) => {
         const pathName =  window.location.pathname
@@ -128,15 +130,17 @@ const MyLayout = (props) => {
     //请求菜单
     useEffect(() => {
         if (!_.isArray(menus)) {
-            GetUserMenus((err, data) => {
+            GetLoginUserInfo((err, data) => {
                 if (!err) {
 
                     props.userinfoActions.login({
                         username: props.userinfo.username,
-                        menus: data
+                        menus: data.menus,
+                        webname: data.webname,
+                        timezone: data.timezone
                     })
 
-                    setMenus(data)
+                    setMenus(data.menus)
 
                     setDefaultSelectMenuKey(data && data.length ? data[0].f.id : 0)
                 }
@@ -156,6 +160,10 @@ const MyLayout = (props) => {
 
     const updatePassword = (e) => {
         e.preventDefault();
+
+        if (updatePasswordModalRef.current) {
+            updatePasswordModalRef.current.showUpdatePasswordModal(true, props.userinfo.username)
+        }
     }
 
     const siderCollapseEvent = (collapsed, type) => {
@@ -163,10 +171,10 @@ const MyLayout = (props) => {
     }
 
     const titleNode = (
-        <h2>X2GAME 游戏管理后台</h2>
+        <h2>{props.userinfo.webname}</h2>
     )
     const subTitleNode = (
-        <h4><Tag color="geekblue">当前时区: Asia/Shanghai</Tag></h4>
+        <h4><Tag color="geekblue">当前时区: {props.userinfo.timezone} <FormattedMessage id="hello"/></Tag></h4>
     )
     const userDropDownNode = () => {
         return (
@@ -215,8 +223,8 @@ const MyLayout = (props) => {
         <>
              <Helmet>
                 <meta charSet="utf-8" />
-                <title>x2game 游戏管理系统</title>
-                <meta name="description" content="x2game 游戏管理系统"/>
+                <title>{props.userinfo.webname}</title>
+                <meta name="description" content={props.userinfo.webname}/>
             </Helmet>
             <Layout>           
                 <Header style={headerStyle}>
@@ -231,7 +239,7 @@ const MyLayout = (props) => {
                         </div>
                         <div className="header-right">
                             <Dropdown overlay={userDropDownNode}>
-                                <Popover placement="leftTop" content={props.userinfo.username}>
+                                <Popover placement="leftTop" content={"当前用户:" + props.userinfo.username}>
                                     <a href="##">
                                         <Avatar
                                             style={{
@@ -278,9 +286,10 @@ const MyLayout = (props) => {
                 </Layout>
                 
                 <Footer style={footerStyle}>
-                        游戏管理工具
+                        {props.userinfo.webname}
                         <a href="/#">www.baidu.com</a>
                 </Footer>
+                <UpdatePasswordModal ref={(el) => { updatePasswordModalRef.current = el }}/>
                 <style jsx>{`
                     .header-inner {
                         display: flex;

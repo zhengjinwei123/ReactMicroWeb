@@ -19,8 +19,7 @@ func UserRouter() http.Handler {
 	r.Post("/ban", userservice.UserBan)
 	r.Post("/update_email_group", userservice.UpdateEmailAndGroup)
 	r.Post("/update_password", userservice.UpdatePassword)
-	r.Post("/menus", userservice.GetMenus)
-
+	r.Post("/user_info", userservice.GetUserInfo)
 
 	return r
 }

@@ -1,10 +1,10 @@
 package config
 
 import (
-	"serverapp/src/base/common"
 	"errors"
 	"flag"
 	"fmt"
+	"serverapp/src/base/common"
 )
 
 var (
@@ -34,8 +34,18 @@ type xmlRedis struct {
 type xmlSession struct {
 	Typ string `xml:"type"`
 	MaxAge int `xml:"maxAge"`
+	IdleTime int `xml:"idleTime"`
 	KeyPrefix string `xml:"keyPrefix"`
 	Redis xmlRedis `xml:"redis"`
+}
+
+type xmlApp struct {
+	Name string `xml:"name,attr"`
+	Host string `xml:"host,attr"`
+}
+
+type xmlChildApps struct {
+	Apps []xmlApp `xml:"app"`
 }
 
 type serverConfig struct {
@@ -43,6 +53,10 @@ type serverConfig struct {
 	Log            xmlLog   `xml:"log"`
 	Mysql          xmlMysql `xml:"mysql"`
 	Session        xmlSession `xml:"session"`
+	TimeZone       string `xml:"time-zone"`
+	WebName        string `xml:"web-name"`
+	ChildApps      xmlChildApps `xml:"childapps"`
+	Language       string `xml:"language"`
 }
 
 func newServerConfig() *serverConfig {

@@ -1,25 +1,10 @@
 import { Table, Input, InputNumber, Popconfirm, Form, Typography, Button, Space, Select, message, Badge,Modal } from 'antd';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect,useRef } from 'react';
 const { Option } = Select;
 
-import { GetUserList, BanUser, UpdatePassword,UpdateEmailAndGroup } from "../../services/user"
-import md5 from "js-md5"
+import { GetUserList, BanUser,UpdateEmailAndGroup } from "../../services/user"
+import UpdatePasswordModal from "../UpdatePasswordModal/index"
 
-
-const layout = {
-    labelCol: {
-      span: 8,
-    },
-    wrapperCol: {
-      span: 8,
-    },
-  };
-  const tailLayout = {
-    wrapperCol: {
-      offset: 8,
-      span: 16,
-    },
-  };
 
 const EditableCell = ({
     editing,
@@ -80,13 +65,10 @@ const EditableTable = ({user_groups}) => {
     const [form] = Form.useForm();
     const [data, setData] = useState([]);
     const [editingKey, setEditingKey] = useState('');
-    const [isModalVisible, setIsModalVisible] = useState(false);
-    const [username, setUsername] = useState("")
 
-    const [updatePasswordForm] = Form.useForm();
+    const updatePasswordModalRef = useRef(null)
 
     const isEditing = (record) => record.key === editingKey;
-
 
     const getUserList = () => {
         GetUserList((err, data) => {
@@ -141,25 +123,14 @@ const EditableTable = ({user_groups}) => {
     };
 
     const showUpdatePasswordModal = (show, username) => {
-        setIsModalVisible(show);
-        updatePasswordForm.resetFields();
-        setUsername(username)
+
+        if (updatePasswordModalRef.current) {
+            console.log("fuck 555")
+            updatePasswordModalRef.current.showUpdatePasswordModal(show, username)
+        }
     }
 
-    const onUpdatePasswordModalFinish = (values) => {
 
-        console.log(md5(values.password), username)
-        
-        UpdatePassword(username, md5(values.password), (err, data) => {
-            if (err) {
-                message.error(err)
-            } else {
-                message.success("success")
-                setIsModalVisible(false);
-            }
-        })
-    }
-  
     const save = async (key) => {
       try {
         const row = await form.validateFields();
@@ -317,56 +288,7 @@ const EditableTable = ({user_groups}) => {
                     }}
                 />
             </Form>
-            <Modal  footer={null} maskClosable={false} title="Update Password" visible={isModalVisible}  onCancel={() => showUpdatePasswordModal(false)}>
-                <Form
-                    {...layout}
-                    name="update_password_dialog"
-                    onFinish={onUpdatePasswordModalFinish}
-                    form={updatePasswordForm}
-                    >
-
-                    <Form.Item label="Password"
-                        name="password" rules={[
-                            {
-                              required: true,
-                              message: 'Please input your password!',
-                            },
-                          ]}>
-                        <Input.Password />
-                    </Form.Item>
-
-                    <Form.Item
-                        name="confirm"
-                        label="确认密码"
-                        dependencies={['password']}
-                        hasFeedback
-                        rules={[
-                            {
-                            required: true,
-                            message: 'Please confirm your password!',
-                            },
-                            ({ getFieldValue }) => ({
-                            validator(_, value) {
-                                if (!value || getFieldValue('password') === value) {
-                                return Promise.resolve();
-                                }
-                
-                                return Promise.reject('The two passwords that you entered do not match!');
-                            },
-                            }),
-                        ]}
-                        >
-                        <Input.Password />
-                    </Form.Item>
-
-                    <Form.Item {...tailLayout}>
-                        <Button type="primary" htmlType="submit">
-                        Submit
-                        </Button>
-                    </Form.Item>
-
-                </Form>
-            </Modal>
+            <UpdatePasswordModal ref={ (el) => { updatePasswordModalRef.current = el} }/>
           </div>
         
       );

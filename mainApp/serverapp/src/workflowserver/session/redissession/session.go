@@ -10,12 +10,22 @@ import (
 	"serverapp/src/base/sessions"
 	"net/http"
 	"time"
+	l4g "serverapp/src/base/log4go"
 )
 
 var sessEngine *sessions.Engine
 
 func Start() error {
 	var err error
+
+	var idleTimeInt int = config.GetServerConfig().Session.IdleTime
+
+	//if idleTimeInt < 60 {
+	//	idleTimeInt = 60;
+	//}
+	l4g.Debug("idle: %d", idleTimeInt)
+
+
 	// 创建session引擎
 	sessEngine, err = sessions.NewEngine(sessions.Config{
 		CookieName:                 "sessionid",        // cookie中的sessionID名称
@@ -23,7 +33,7 @@ func Start() error {
 		Domain:                     "",                 // 作用域名，留空则自动获取当前域名
 		Path:                       "/",                // 作用路径
 		MaxAge:                     config.GetServerConfig().Session.MaxAge,            // 最大生命周期（秒）
-		IdleTime:                   20 * time.Minute,   // 空闲超时时间
+		IdleTime:                   time.Duration(idleTimeInt) * time.Minute,   // 空闲超时时间
 		Secure:                     false,              // 启用HTTPS
 		DisableAutoUpdateIdleTime:  false,              // 禁止自动更新空闲时间
 		RedisAddr:                  config.GetServerConfig().GetRedisAddr(),

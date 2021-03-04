@@ -1,0 +1,6 @@
+<log created="2021/03/04 18:07:22.006539">
+[2021/03/04 18:07:22.006539] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/04 18:07:24.950225] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/04 18:07:29.953569] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/04 18:08:01.945285] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:97[0m) [32mcatch signal interrupt, server ready to shutdown.[0m
+</log>

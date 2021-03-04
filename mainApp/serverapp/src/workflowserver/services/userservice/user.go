@@ -4,6 +4,7 @@ import (
 	"net/http"
 	l4g "serverapp/src/base/log4go"
 	"serverapp/src/base/orm"
+	"serverapp/src/workflowserver/config"
 	"serverapp/src/workflowserver/dbservice/dbgroupservice"
 	"serverapp/src/workflowserver/dbservice/dbuserservice"
 	"serverapp/src/workflowserver/manager/eventmgr"
@@ -58,6 +59,8 @@ func Login(w http.ResponseWriter, r *http.Request) {
 	}
 
 	resp.Msg = netproto.H{
+		"webname": config.GetServerConfig().WebName,
+		"timezone": config.GetServerConfig().TimeZone,
 		"menus":  menumgr.GetMenuMgr().GetMenusByGroupId(userInfo.GroupId),
 	}
 
@@ -123,12 +126,15 @@ func AllMenus(w http.ResponseWriter, r *http.Request) {
 	resp.SendMessage(w)
 }
 
-func GetMenus(w http.ResponseWriter, r *http.Request) {
+func GetUserInfo(w http.ResponseWriter, r *http.Request) {
 	groupId := session.GetUserGroupId(w, r)
-	menus := menumgr.GetMenuMgr().GetMenusByGroupId(groupId)
 
 	resp := &net.NetResponse{}
-	resp.Msg = menus
+	resp.Msg = netproto.H{
+		"webname": config.GetServerConfig().WebName,
+		"timezone": config.GetServerConfig().TimeZone,
+		"menus":  menumgr.GetMenuMgr().GetMenusByGroupId(groupId),
+	}
 	resp.SendMessage(w)
 }
 

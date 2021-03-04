@@ -1,0 +1,135 @@
+<log created="2021/03/04 15:11:18.367216">
+[2021/03/04 15:11:18.371216] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/session/redissession/session.go:26[0m) [35midle: 20[0m
+[2021/03/04 15:11:18.374212] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/manager/menumgr/menumgr.go:104[0m) [35mmenu init success[0m
+[2021/03/04 15:11:18.375213] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:87[0m) [32mserver start at :8801[0m
+[2021/03/04 15:11:20.350360] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/child_apps|map[][0m
+[2021/03/04 15:11:20.350360] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/service.go:23[0m) [35mzjw called: workflow http://10.235.102.238:9004[0m
+[2021/03/04 15:11:26.372320] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/child_apps|map[][0m
+[2021/03/04 15:11:26.372320] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/service.go:23[0m) [35mzjw called: workflow http://10.235.102.238:9004[0m
+[2021/03/04 15:11:27.457971] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/user/login|map[password:[e10adc3949ba59abbe56e057f20f883e] username:[zjw]][0m
+[2021/03/04 15:11:28.205750] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/child_apps|map[][0m
+[2021/03/04 15:11:28.206751] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/service.go:23[0m) [35mzjw called: workflow http://10.235.102.238:9004[0m
+[2021/03/04 15:11:39.728528] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:11:48.039942] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:11:48.869995] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/user/list|map[][0m
+[2021/03/04 15:11:48.870994] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:11:49.439827] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/user/all_menus|map[][0m
+[2021/03/04 15:11:50.028009] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:11:50.028009] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:11:51.020478] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:11:52.256081] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:11:54.516649] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/user/logout|map[][0m
+[2021/03/04 15:11:55.523322] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/child_apps|map[][0m
+[2021/03/04 15:11:55.523322] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/service.go:23[0m) [35mzjw called: workflow http://10.235.102.238:9004[0m
+[2021/03/04 15:11:57.115968] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/user/login|map[password:[e10adc3949ba59abbe56e057f20f883e] username:[zjw]][0m
+[2021/03/04 15:11:57.873723] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/child_apps|map[][0m
+[2021/03/04 15:11:57.873723] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/service.go:23[0m) [35mzjw called: workflow http://10.235.102.238:9004[0m
+[2021/03/04 15:13:05.018320] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/user/logout|map[][0m
+[2021/03/04 15:13:05.873045] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/child_apps|map[][0m
+[2021/03/04 15:13:05.873045] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/service.go:23[0m) [35mzjw called: workflow http://10.235.102.238:9004[0m
+[2021/03/04 15:13:06.947372] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/user/login|map[password:[e10adc3949ba59abbe56e057f20f883e] username:[zjw]][0m
+[2021/03/04 15:13:07.655143] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/child_apps|map[][0m
+[2021/03/04 15:13:07.655143] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/service.go:23[0m) [35mzjw called: workflow http://10.235.102.238:9004[0m
+[2021/03/04 15:13:07.701130] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/user/user_info|map[][0m
+[2021/03/04 15:13:09.174244] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:13:10.049467] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/user/list|map[][0m
+[2021/03/04 15:13:10.051467] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:13:10.572298] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/user/all_menus|map[][0m
+[2021/03/04 15:13:11.102584] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:13:11.102584] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:13:13.363885] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/user/all_menus|map[][0m
+[2021/03/04 15:13:15.210365] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/update_menus|map[group_id:[6] menus:[100,101,102,900,901]][0m
+[2021/03/04 15:13:15.211364] [EROR] ([31mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/net/response.go:43[0m) [31m{"data":"data not changed","ret":-1}[0m
+[2021/03/04 15:13:17.732417] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/user/all_menus|map[][0m
+[2021/03/04 15:13:21.099494] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/update_menus|map[group_id:[6] menus:[900,901]][0m
+[2021/03/04 15:13:21.147479] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:13:29.090334] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/child_apps|map[][0m
+[2021/03/04 15:13:29.090334] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/service.go:23[0m) [35mzjw called: workflow http://10.235.102.238:9004[0m
+[2021/03/04 15:13:29.253281] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:13:38.397338] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/user/list|map[][0m
+[2021/03/04 15:13:38.397338] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:13:39.157117] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:13:41.425157] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:13:45.592777] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/child_apps|map[][0m
+[2021/03/04 15:13:45.592777] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/service.go:23[0m) [35mzjw called: workflow http://10.235.102.238:9004[0m
+[2021/03/04 15:13:55.493770] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:13:57.414115] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/user/logout|map[][0m
+[2021/03/04 15:13:58.299143] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/child_apps|map[][0m
+[2021/03/04 15:13:58.299143] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/service.go:23[0m) [35mzjw called: workflow http://10.235.102.238:9004[0m
+[2021/03/04 15:13:59.571459] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/user/login|map[password:[e10adc3949ba59abbe56e057f20f883e] username:[zjw]][0m
+[2021/03/04 15:14:00.429170] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/child_apps|map[][0m
+[2021/03/04 15:14:00.429170] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/service.go:23[0m) [35mzjw called: workflow http://10.235.102.238:9004[0m
+[2021/03/04 15:14:03.240003] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:14:04.133493] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/user/list|map[][0m
+[2021/03/04 15:14:04.133493] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:14:04.878080] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/user/all_menus|map[][0m
+[2021/03/04 15:14:05.542093] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:14:06.175839] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:14:06.678684] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:14:08.436996] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:14:08.436996] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:14:11.105000] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:14:11.672822] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:14:12.168901] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:14:13.173687] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:14:14.312025] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:14:15.279051] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:14:15.851194] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:14:16.323417] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:14:17.344593] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:15:13.006127] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/user/all_menus|map[][0m
+[2021/03/04 15:15:15.666483] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/update_menus|map[group_id:[6] menus:[100,101,102,900,901]][0m
+[2021/03/04 15:15:15.703447] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:15:18.897314] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/child_apps|map[][0m
+[2021/03/04 15:15:18.897314] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/service.go:23[0m) [35mzjw called: workflow http://10.235.102.238:9004[0m
+[2021/03/04 15:15:19.061260] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:15:21.268934] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/user/list|map[][0m
+[2021/03/04 15:15:21.269935] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:15:21.790103] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/user/all_menus|map[][0m
+[2021/03/04 15:15:22.261103] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:15:22.261103] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:15:26.166181] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/user/logout|map[][0m
+[2021/03/04 15:15:27.042899] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/child_apps|map[][0m
+[2021/03/04 15:15:27.042899] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/service.go:23[0m) [35mzjw called: workflow http://10.235.102.238:9004[0m
+[2021/03/04 15:15:27.858333] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/user/login|map[password:[e10adc3949ba59abbe56e057f20f883e] username:[zjw]][0m
+[2021/03/04 15:15:28.663075] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/child_apps|map[][0m
+[2021/03/04 15:15:28.663075] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/service.go:23[0m) [35mzjw called: workflow http://10.235.102.238:9004[0m
+[2021/03/04 15:15:31.237051] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:15:34.842240] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:15:36.759123] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/user/list|map[][0m
+[2021/03/04 15:15:36.759123] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:15:37.273504] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/user/all_menus|map[][0m
+[2021/03/04 15:15:37.761500] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:15:37.761500] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:15:40.275922] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:15:40.839995] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:15:41.829239] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:15:42.452747] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:15:42.851245] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:15:44.163915] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:15:50.369200] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/user/update_email_group|map[email:[2538698031@qq.com] group_id:[1] username:[zjw]][0m
+[2021/03/04 15:15:53.756710] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/user/logout|map[][0m
+[2021/03/04 15:15:54.772392] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/child_apps|map[][0m
+[2021/03/04 15:15:54.772392] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/service.go:23[0m) [35mzjw called: workflow http://10.235.102.238:9004[0m
+[2021/03/04 15:15:55.635131] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/user/login|map[password:[e10adc3949ba59abbe56e057f20f883e] username:[zjw]][0m
+[2021/03/04 15:15:56.392912] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/child_apps|map[][0m
+[2021/03/04 15:15:56.392912] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/service.go:23[0m) [35mzjw called: workflow http://10.235.102.238:9004[0m
+[2021/03/04 15:15:58.115488] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:16:01.460983] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:16:22.438873] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:16:26.440691] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:16:43.580706] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/child_apps|map[][0m
+[2021/03/04 15:16:43.580706] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/service.go:23[0m) [35mzjw called: workflow http://10.235.102.238:9004[0m
+[2021/03/04 15:16:46.861936] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/child_apps|map[][0m
+[2021/03/04 15:16:46.861936] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/service.go:23[0m) [35mzjw called: workflow http://10.235.102.238:9004[0m
+[2021/03/04 15:16:50.141606] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 15:16:54.857719] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/child_apps|map[][0m
+[2021/03/04 15:16:54.857719] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/service.go:23[0m) [35mzjw called: workflow http://10.235.102.238:9004[0m
+[2021/03/04 15:17:52.909008] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/user/logout|map[][0m
+[2021/03/04 15:17:53.826375] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/child_apps|map[][0m
+[2021/03/04 15:17:53.826375] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/service.go:23[0m) [35mzjw called: workflow http://10.235.102.238:9004[0m
+[2021/03/04 15:17:54.843048] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/user/login|map[password:[e10adc3949ba59abbe56e057f20f883e] username:[zjw]][0m
+[2021/03/04 15:17:55.716770] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/child_apps|map[][0m
+[2021/03/04 15:17:55.716770] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/service.go:23[0m) [35mzjw called: workflow http://10.235.102.238:9004[0m
+[2021/03/04 15:58:50.054160] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:97[0m) [32mcatch signal interrupt, server ready to shutdown.[0m
+</log>

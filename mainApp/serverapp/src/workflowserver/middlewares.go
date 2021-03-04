@@ -21,7 +21,8 @@ func authMiddleware(next http.Handler) http.Handler {
 
 		if false == session.UserHasLogin(w, r) {
 			if r.URL.Path != "/api/user/login" &&
-				r.URL.Path != "/api/user/logout" {
+				r.URL.Path != "/api/user/logout" &&
+				r.URL.Path != "/api/server_run_info" {
 				resp := &net.NetResponse{}
 				resp.Msg = "no auth, please login first"
 				resp.SendErrorCode(w, net.ERROR_CODE_TOKEN_EXPIRED)
@@ -30,7 +31,8 @@ func authMiddleware(next http.Handler) http.Handler {
 		}
 
 		if r.URL.Path != "/api/user/login" &&
-			r.URL.Path != "/api/user/logout" {
+			r.URL.Path != "/api/user/logout" &&
+			r.URL.Path != "/api/server_run_info" {
 			userName := session.GetUserName(w, r)
 
 			if usermgr.GetUserMgr().UserHasBanded(userName) {

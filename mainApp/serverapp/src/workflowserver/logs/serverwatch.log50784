@@ -1,0 +1,4 @@
+<log created="2021/03/04 18:09:50.844120">
+[2021/03/04 18:09:50.848090] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/session/redissession/session.go:26[0m) [35midle: 20[0m
+[2021/03/04 18:09:50.852090] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/manager/menumgr/menumgr.go:104[0m) [35mmenu init success[0m
+</log>

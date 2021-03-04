@@ -14,7 +14,9 @@ import (
 	l4g "serverapp/src/base/log4go"
 	"serverapp/src/workflowserver/config"
 	"serverapp/src/workflowserver/manager/eventmgr"
+	"serverapp/src/workflowserver/manager/lanmgr"
 	"serverapp/src/workflowserver/manager/menumgr"
+	"serverapp/src/workflowserver/services"
 	"serverapp/src/workflowserver/session/redissession"
 	"serverapp/src/workflowserver/sql"
 	"syscall"
@@ -60,6 +62,10 @@ func main() {
 		common.PanicExt(err.Error())
 	}
 
+	if err := lanmgr.GetLanMgr().Load(serverConfig.Language); err != nil {
+		common.PanicExt(err.Error())
+	}
+
 	r := chi.NewRouter()
 	r.Use(middleware.RequestID)
 	r.Use(middleware.RealIP)
@@ -68,6 +74,8 @@ func main() {
 
 	r.Route("/api", func(r chi.Router) {
 		r.Use(authMiddleware)
+
+		r.Post("/server_run_info", services.ServerRunInformation)
 
 		r.Mount("/user", UserRouter())
 		r.Mount("/group", GroupRouter())

@@ -29,7 +29,6 @@ func LoadJsonConfig(filename string, v interface{}) error {
 	return nil
 }
 
-
 func SaveConfig(filename string, v interface{}) error {
 	if contents, err := xml.Marshal(v); err != nil {
 		return err

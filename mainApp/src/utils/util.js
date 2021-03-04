@@ -3,6 +3,7 @@ import Qs from "qs"
 import { showLoading, hideLoading } from "../components/PageLoading"
 import _ from "lodash"
 import {message } from "antd"
+import {setUserLogout} from "../services/user"
 
 
 const headerConfig = {
@@ -30,7 +31,9 @@ const postApi= (path, params, callback) => {
                 } else if (resp.data.ret == 101) {
                     message.error("账号已封禁，请联系管理员")
                 } else if (resp.data.ret == 102) {
-                    message.error("TOKEN 已过期，请点击下线重新登录")
+                    setUserLogout()
+                    redirectLogin();
+                    // message.error("TOKEN 已过期，请点击下线重新登录")
                 } else {
                     callback(null, resp.data.data) 
                 }

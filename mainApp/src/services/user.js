@@ -32,8 +32,8 @@ const GetUserList = (callback) => {
     })
 }
 
-const GetUserMenus = (callback) => {
-    postApi("/api/user/menus", {}, (err, data) => {
+const GetLoginUserInfo = (callback) => {
+    postApi("/api/user/user_info", {}, (err, data) => {
         callback(err, data)
     })
 }
@@ -87,8 +87,8 @@ export {
     BanUser,
     UpdatePassword,
     UpdateEmailAndGroup,
-    GetUserMenus,
-    
+    GetLoginUserInfo,
+
     setUserLogin,
     setUserLogout,
     checkUserHasLogin,

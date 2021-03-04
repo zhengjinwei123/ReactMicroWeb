@@ -45,11 +45,7 @@ const Login = ({ userinfoActions, userinfo }) => {
         redirectTo("/dashboard")
         return;
     }
-    // if (!_.isEmpty(userinfo) && !_.isEmpty(userinfo.username)) {
-    //     redirectTo("/dashboard")
-    //     return;
-    // }
-
+   
     const [rememberMe, setRememberMe] = useState(true)
     const [form] = Form.useForm();
 
@@ -88,7 +84,9 @@ const Login = ({ userinfoActions, userinfo }) => {
 
                 userinfoActions.login({
                     username: username,
-                    menus: data.menus
+                    menus: data.menus,
+                    webname: data.webname,
+                    timezone: data.timezone,
                 })
 
                 redirectTo("/dashboard")

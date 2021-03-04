@@ -1,0 +1,32 @@
+<log created="2021/03/04 14:35:48.104421">
+[2021/03/04 14:35:48.111398] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/manager/menumgr/menumgr.go:103[0m) [35mmenu init success[0m
+[2021/03/04 14:35:48.112380] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:87[0m) [32mserver start at :8801[0m
+[2021/03/04 14:35:52.822355] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/child_apps|map[][0m
+[2021/03/04 14:35:52.822355] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/service.go:23[0m) [35mzjw called: workflow http://10.235.102.238:9004[0m
+[2021/03/04 14:35:52.822355] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/service.go:23[0m) [35mzjw called: workflow http://10.235.102.238:9004[0m
+[2021/03/04 14:40:12.409672] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/child_apps|map[][0m
+[2021/03/04 14:40:12.409672] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/service.go:23[0m) [35mzjw called: workflow http://10.235.102.238:9004[0m
+[2021/03/04 14:40:12.409672] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/service.go:23[0m) [35mzjw called: workflow http://10.235.102.238:9004[0m
+[2021/03/04 14:40:20.566371] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/child_apps|map[][0m
+[2021/03/04 14:40:20.566371] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/service.go:23[0m) [35mzjw called: workflow http://10.235.102.238:9004[0m
+[2021/03/04 14:40:20.566371] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/service.go:23[0m) [35mzjw called: workflow http://10.235.102.238:9004[0m
+[2021/03/04 14:40:29.284557] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/child_apps|map[][0m
+[2021/03/04 14:40:29.284557] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/service.go:23[0m) [35mzjw called: workflow http://10.235.102.238:9004[0m
+[2021/03/04 14:40:29.284557] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/service.go:23[0m) [35mzjw called: workflow http://10.235.102.238:9004[0m
+[2021/03/04 14:41:37.112427] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/child_apps|map[][0m
+[2021/03/04 14:41:37.112427] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/service.go:23[0m) [35mzjw called: workflow http://10.235.102.238:9004[0m
+[2021/03/04 14:41:37.112427] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/service.go:23[0m) [35mzjw called: workflow http://10.235.102.238:9004[0m
+[2021/03/04 14:41:53.620215] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/user/login|map[password:[e10adc3949ba59abbe56e057f20f883e] username:[zjw]][0m
+[2021/03/04 14:41:54.806146] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/child_apps|map[][0m
+[2021/03/04 14:41:54.806146] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/service.go:23[0m) [35mzjw called: workflow http://10.235.102.238:9004[0m
+[2021/03/04 14:41:54.807146] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/service.go:23[0m) [35mzjw called: workflow http://10.235.102.238:9004[0m
+[2021/03/04 14:43:52.025335] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/child_apps|map[][0m
+[2021/03/04 14:43:52.025335] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/service.go:23[0m) [35mzjw called: workflow http://10.235.102.238:9004[0m
+[2021/03/04 14:43:52.025335] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/service.go:23[0m) [35mzjw called: workflow http://10.235.102.238:9004[0m
+[2021/03/04 14:43:57.878226] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/04 14:44:13.041442] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/user/logout|map[][0m
+[2021/03/04 14:44:14.263559] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/child_apps|map[][0m
+[2021/03/04 14:44:14.263559] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/service.go:23[0m) [35mzjw called: workflow http://10.235.102.238:9004[0m
+[2021/03/04 14:44:14.263559] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/service.go:23[0m) [35mzjw called: workflow http://10.235.102.238:9004[0m
+[2021/03/04 14:44:55.516240] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:97[0m) [32mcatch signal interrupt, server ready to shutdown.[0m
+</log>

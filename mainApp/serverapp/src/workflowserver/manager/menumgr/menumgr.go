@@ -10,6 +10,7 @@ import (
 	"serverapp/src/workflowserver/proto"
 	"serverapp/src/workflowserver/proto/dbproto"
 	"serverapp/src/workflowserver/proto/netproto"
+	"sort"
 	"strconv"
 	"strings"
 )
@@ -145,7 +146,16 @@ func (this *menuMgr) LoadMenuByGroupId(groupId int, menuStr string) error {
 		}
 	}
 
-	for parentId, childIdList := range idTree {
+	// 排序， 让菜单配置顺序显示菜单
+	sortedKeys := make([]int, len(idTree))
+	for parentId, _ := range idTree {
+		sortedKeys = append(sortedKeys, parentId)
+	}
+	sort.Ints(sortedKeys)
+
+	for _, parentId := range sortedKeys {
+
+		childIdList, _ := idTree[parentId]
 
 		menus := &netproto.Menus{}
 
