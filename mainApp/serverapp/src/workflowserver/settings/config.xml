@@ -12,7 +12,7 @@
     </childapps>
 
     <!-- 参考antd 语言包设置 英文：en  中文: zh-cn  日文: ja  韩文:ko  中文繁体：zh-tw  越南文： vi -->
-    <language>zh-cn</language>
+    <language>ja</language>
 
     <!--cookie|redis-->
     <session>
