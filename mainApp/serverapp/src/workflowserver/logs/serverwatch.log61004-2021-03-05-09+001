@@ -1,7 +1,0 @@
-<log created="2021/03/05 09:59:07.017787">
-[2021/03/05 09:59:07.021786] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/session/redissession/session.go:26[0m) [35midle: 20[0m
-[2021/03/05 09:59:07.024787] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/manager/menumgr/menumgr.go:104[0m) [35mmenu init success[0m
-[2021/03/05 09:59:07.026787] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:87[0m) [32mserver start at :8801[0m
-[2021/03/05 09:59:12.158138] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
-[2021/03/05 09:59:45.325505] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
-</log>

@@ -1,5 +1,0 @@
-<log created="2021/03/04 14:25:37.196044">
-[2021/03/04 14:25:37.204043] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/manager/menumgr/menumgr.go:103[0m) [35mmenu init success[0m
-[2021/03/04 14:25:37.205042] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:87[0m) [32mserver start at :8801[0m
-[2021/03/04 14:28:25.725483] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:97[0m) [32mcatch signal interrupt, server ready to shutdown.[0m
-</log>

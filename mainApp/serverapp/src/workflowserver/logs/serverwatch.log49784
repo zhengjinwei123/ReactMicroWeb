@@ -1,8 +1,0 @@
-<log created="2021/03/03 10:29:04.514707">
-[2021/03/03 10:29:04.521706] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/manager/menumgr/menumgr.go:103[0m) [35mmenu init success[0m
-[2021/03/03 10:29:04.523705] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:84[0m) [32mserver start at :8801[0m
-[2021/03/03 10:29:08.560170] [EROR] ([31mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/net/response.go:38[0m) [31m{"data":"no auth, please login first","ret":-1}[0m
-[2021/03/03 10:29:12.666698] [EROR] ([31mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/net/response.go:38[0m) [31m{"data":"sorry, user has banded","ret":-1}[0m
-[2021/03/03 10:29:16.100993] [EROR] ([31mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/net/response.go:38[0m) [31m{"data":"sorry, user has banded","ret":-1}[0m
-[2021/03/03 10:31:08.908683] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:94[0m) [32mcatch signal interrupt, server ready to shutdown.[0m
-</log>

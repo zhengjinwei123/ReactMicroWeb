@@ -1,8 +1,0 @@
-<log created="2021/03/02 10:19:23.640869">
-[2021/03/02 10:19:23.640869] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/manager/menumgr/menumgr.go:101[0m) [35mmenu init success[0m
-[2021/03/02 10:19:29.127138] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:31[0m) [35mrequest: /api/user/logout|map[][0m
-[2021/03/02 10:19:29.127138] [EROR] ([31mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/net/response.go:38[0m) [31m{"data":"user has not login","ret":-1}[0m
-[2021/03/02 10:19:31.871301] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:31[0m) [35mrequest: /api/user/login|map[][0m
-[2021/03/02 10:19:31.873302] [EROR] ([31mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/net/response.go:38[0m) [31m{"data":"username not exists","ret":-1}[0m
-[2021/03/02 10:20:57.889284] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:90[0m) [32mcatch signal interrupt, server ready to shutdown.[0m
-</log>

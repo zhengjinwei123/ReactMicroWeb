@@ -1,8 +1,0 @@
-<log created="2021/03/03 09:55:44.192361">
-[2021/03/03 09:55:44.200357] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/manager/menumgr/menumgr.go:103[0m) [35mmenu init success[0m
-[2021/03/03 09:55:44.202357] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:89[0m) [32mserver start at :8801[0m
-[2021/03/03 09:55:47.726113] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:30[0m) [35mrequest: /api/user/update_password|map[password:[202cb962ac59075b964b07152d234b70] username:[zjw]][0m
-[2021/03/03 09:55:47.726113] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/userservice/user.go:210[0m) [35maaa  | [0m
-[2021/03/03 09:55:47.727113] [EROR] ([31mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/net/response.go:38[0m) [31m{"data":"data not changed","ret":-1}[0m
-[2021/03/03 09:56:15.086325] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:99[0m) [32mcatch signal interrupt, server ready to shutdown.[0m
-</log>

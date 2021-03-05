@@ -1,6 +1,0 @@
-<log created="2021/03/02 10:15:30.677018">
-[2021/03/02 10:15:30.678071] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/manager/menumgr/menumgr.go:101[0m) [35mmenu init success[0m
-[2021/03/02 10:16:03.571995] [EROR] ([31mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/net/response.go:38[0m) [31m{"data":"parse parameter error","ret":-1}[0m
-[2021/03/02 10:16:06.304479] [EROR] ([31mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/net/response.go:38[0m) [31m{"data":"parse parameter error","ret":-1}[0m
-[2021/03/02 10:19:14.782838] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:90[0m) [32mcatch signal interrupt, server ready to shutdown.[0m
-</log>

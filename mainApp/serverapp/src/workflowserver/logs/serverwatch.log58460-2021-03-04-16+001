@@ -1,5 +1,0 @@
-<log created="2021/03/04 16:59:55.371744">
-[2021/03/04 16:59:55.375743] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/session/redissession/session.go:26[0m) [35midle: 20[0m
-[2021/03/04 16:59:55.378744] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/manager/menumgr/menumgr.go:104[0m) [35mmenu init success[0m
-[2021/03/04 16:59:55.379779] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:87[0m) [32mserver start at :8801[0m
-</log>

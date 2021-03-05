@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+    <log>
+        <config>../settings/log_config.xml</config>
+    </log>
+    <http>:8801</http>
+    <time-zone>Asia/Shanghai</time-zone>
+    <web-name>工作流管理系统</web-name>
+
+    <childapps>
+        <app name="workflow" host="http://10.235.102.238:9004"/>
+    </childapps>
+
+    <!-- 参考antd 语言包设置 英文：en  中文: zh-cn  日文: ja  韩文:ko  中文繁体：zh-tw  越南文： vi -->
+    <language>ja</language>
+
+    <!--cookie|redis-->
+    <session>
+        <type>redis</type>
+        <!-- 最长持续在线时间后自动踢下线 单位秒-->
+        <maxAge>86400</maxAge>
+        <!--  超过多少时间没有请求自动踢下线 单位分钟-->
+        <idleTime>20</idleTime>
+        <keyPrefix>sess</keyPrefix>
+        <redis>
+            <host>10.235.102.249</host>
+            <port>6389</port>
+            <db>1</db>
+            <password></password>
+        </redis>
+    </session>
+
+    <mysql>
+        <host>10.235.102.249</host>
+        <port>3306</port>
+        <database>db_workflow</database>
+        <username>root</username>
+        <password>root</password>
+    </mysql>
+</config>

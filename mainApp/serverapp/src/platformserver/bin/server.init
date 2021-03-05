@@ -1,0 +1,186 @@
+#!/bin/bash
+
+set -o pipefail
+
+script_name=`basename $0`
+script_abs_name=`readlink -f $0`
+script_path=`dirname "$script_abs_name"`
+
+desc=platformserver
+prog=$script_path/$desc
+pid_file=$script_path/run/${desc}.pid
+args=( -config=$2  -pidfile=$pid_file)
+
+proj_home=`readlink -f "$script_path/.."`
+error_log_file="$proj_home"/logs/errors.log
+
+wait_tick=0.1
+wait_tick_count=200
+
+usage()
+{
+    printf "usage: $script_name [start|stop|restart|status] \n"
+    exit 1
+}
+
+if [ $# -eq 2 ]
+then
+    op=$1
+else
+    usage
+fi
+
+show_error()
+{
+    local message=$1
+    printf "\033[;31m%s\033[0m\n" "$message"
+}
+
+show_success()
+{
+    local message=$1
+    printf "\033[;32m%s\033[0m\n" "$message"
+}
+
+do_start()
+{
+    local i
+
+    printf "[staring $desc]"
+
+    if [ -f "$pid_file" ]
+    then
+        pid=`cat "$pid_file"` 2>/dev/null
+        if [ $? -eq 0 ]
+        then
+            kill -0 "$pid" 2>/dev/null
+            if [ $? -eq 0 ]
+            then
+                show_error '[already started]'
+                return 1
+            fi
+        fi
+    fi
+
+    nohup "$prog" "${args[@]}" >/dev/null 2>> "$error_log_file" & >/dev/null
+
+    for (( i = 0; i < "$wait_tick_count"; ++i ))
+    do
+        if [ -f "$pid_file" ]
+        then
+            pid=`cat "$pid_file"` 2>/dev/null
+            if [ $? -eq 0 ]
+            then
+                show_success '[success]'
+                return 0
+            fi
+        fi
+
+        sleep "$wait_tick"
+    done
+
+    show_error '[failed], please open logs/erros.log resolve it'
+
+    return 1
+}
+
+do_stop()
+{
+    local i
+    printf "[stopping $desc]"
+
+    if [ ! -f "$pid_file" ]
+    then
+        show_error '[stopped]'
+        return 0
+    fi
+
+    pid=`cat "$pid_file"` 2>/dev/null
+
+    if [ $? -ne 0 ]
+    then
+        show_error '[not started]'
+        return 1
+    fi
+
+    kill -0 "$pid" 2>/dev/null
+    if [ $? -ne 0 ]
+    then
+        show_error '[not started]'
+        return 1
+    fi
+
+    kill "$pid"
+
+    for (( i = 0; i < "$wait_tick_count"; ++i ))
+    do
+        kill -0 "$pid" 2>/dev/null
+        if [ $? -ne 0 ]
+        then
+            show_success '[success]'
+
+            if [ -f "$pid_file" ]
+            then
+                unlink "$pid_file"
+            fi
+            return 0
+        fi
+
+        sleep "$wait_tick"
+    done
+
+    show_error '[failed]'
+
+    return 1
+}
+
+do_status()
+{
+    printf "[$desc]"
+
+    if [ ! -f "$pid_file" ]
+    then
+        show_error '[stopped]'
+        return 0
+    fi
+
+
+    pid=`cat "$pid_file"` 2>/dev/null
+    if [ $? -ne 0 ]
+    then
+        show_error '[stopped]'
+        return 0
+    fi
+
+    kill -0 "$pid" 2>/dev/null
+
+    if [ $? -ne 0 ]
+    then
+        show_error '[stopped]'
+    else
+        show_success ['running']
+    fi
+
+    return 0
+}
+
+case "$op" in
+    start)
+        do_start
+        ;;
+    stop)
+        do_stop
+        ;;
+    restart)
+        do_stop
+        do_start
+        ;;
+    status)
+        do_status
+        ;;
+    *)
+        usage
+        ;;
+esac
+
+exit 0

@@ -1,0 +1,14 @@
+<log created="2021/03/05 15:02:25.500402">
+[2021/03/05 15:02:25.500402] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 15:02:25.501402] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 15:02:26.530069] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/user/login|map[password:[fcea920f7412b5da7be0cf42b8c93759] username:[admin]][0m
+[2021/03/05 15:02:27.440777] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 15:02:27.440777] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 15:02:45.606156] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 15:02:45.606156] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 15:02:54.944185] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 15:02:54.944185] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 15:03:37.268614] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 15:03:37.268614] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 15:11:35.595607] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:97[0m) [32mcatch signal interrupt, server ready to shutdown.[0m
+</log>
