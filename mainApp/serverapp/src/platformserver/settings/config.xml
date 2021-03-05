@@ -33,7 +33,7 @@
     <mysql>
         <host>10.235.102.249</host>
         <port>3306</port>
-        <database>db_workflow</database>
+        <database>db_platform</database>
         <username>root</username>
         <password>root</password>
     </mysql>

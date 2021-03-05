@@ -1,6 +1,6 @@
-all: workflowserver
+all: platformserver
 
-.PHONY: workflowserver
+.PHONY: platformserver
 
 workflowserver:
-	GOPATH="" && go build && mv workflowserver bin/
+	GOPATH="" && go build && mv platformserver bin/
