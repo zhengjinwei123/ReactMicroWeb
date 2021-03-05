@@ -14,7 +14,6 @@ import (
 	l4g "serverapp/src/base/log4go"
 	"serverapp/src/workflowserver/config"
 	"serverapp/src/workflowserver/manager/eventmgr"
-	"serverapp/src/workflowserver/manager/lanmgr"
 	"serverapp/src/workflowserver/manager/menumgr"
 	"serverapp/src/workflowserver/services"
 	"serverapp/src/workflowserver/session/redissession"
@@ -59,10 +58,6 @@ func main() {
 
 	menuMgr := menumgr.GetMenuMgr()
 	if err := menuMgr.LoadMenu(); err != nil {
-		common.PanicExt(err.Error())
-	}
-
-	if err := lanmgr.GetLanMgr().Load(serverConfig.Language); err != nil {
 		common.PanicExt(err.Error())
 	}
 

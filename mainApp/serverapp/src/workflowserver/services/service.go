@@ -3,7 +3,6 @@ package services
 import (
 	"net/http"
 	"serverapp/src/workflowserver/config"
-	"serverapp/src/workflowserver/manager/lanmgr"
 	"serverapp/src/workflowserver/net"
 	"serverapp/src/workflowserver/proto/netproto"
 	//l4g "serverapp/src/base/log4go"
@@ -27,7 +26,6 @@ func ServerRunInformation(w http.ResponseWriter, r *http.Request) {
 	resp.Msg = netproto.H{
 		"apps": retList,
 		"lan": config.GetServerConfig().Language,
-		"lanmsg": lanmgr.GetLanMgr().LanMessage,
 	}
 	resp.SendMessage(w)
 }

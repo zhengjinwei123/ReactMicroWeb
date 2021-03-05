@@ -179,8 +179,6 @@ export default () => {
 
         if (activekey == 1 || activekey == 2) {
             getAllGroups((err, data) => {
-
-                console.log("ahahaha", data)
                 if (!err) {
                     const tmp = data
                     setUserGroups([...tmp])

@@ -48,6 +48,3 @@ GetServerRunInfo((err, data) => {
   serviceWorker.unregister();
 })
 
-
-
-
