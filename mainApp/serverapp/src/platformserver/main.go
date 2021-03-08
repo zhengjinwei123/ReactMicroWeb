@@ -16,7 +16,6 @@ import (
 	"serverapp/src/platformserver/manager/eventmgr"
 	"serverapp/src/platformserver/manager/menumgr"
 	"serverapp/src/platformserver/services"
-	"serverapp/src/platformserver/session/redissession"
 	"serverapp/src/platformserver/sql"
 	"syscall"
 	"time"
@@ -52,10 +51,6 @@ func main() {
 		common.PanicExt(err.Error())
 	}
 
-	if err := redissession.Start(); err != nil {
-		common.PanicExt(err.Error())
-	}
-
 	menuMgr := menumgr.GetMenuMgr()
 	if err := menuMgr.LoadMenu(); err != nil {
 		common.PanicExt(err.Error())
@@ -68,9 +63,10 @@ func main() {
 	r.Use(middleware.Timeout(20 * time.Second))
 
 	r.Route("/api", func(r chi.Router) {
-		r.Use(authMiddleware)
+		r.Use(JwtAuthenticationMiddleware)
 
 		r.Post("/server_run_info", services.ServerRunInformation)
+		r.Post("/test", services.Test)
 
 		r.Mount("/user", UserRouter())
 		r.Mount("/group", GroupRouter())

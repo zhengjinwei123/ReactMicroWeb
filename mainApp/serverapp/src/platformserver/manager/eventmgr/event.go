@@ -3,11 +3,10 @@ package eventmgr
 import (
 	"serverapp/src/platformserver/manager/usermgr"
 	"serverapp/src/platformserver/proto/dbproto"
-	"serverapp/src/platformserver/session"
 )
 
 func UserLogin(userInfo *dbproto.DbUserTableInfo) {
-	usermgr.GetUserMgr().Login(userInfo.UserName, userInfo.Status)
+	usermgr.GetUserMgr().Login(userInfo.UserName, userInfo.Status, userInfo.GroupId)
 }
 
 func UserLogout(username string) {
@@ -16,5 +15,4 @@ func UserLogout(username string) {
 
 func ServerShutdown() {
 	usermgr.GetUserMgr().Clear()
-	session.ClearAll()
 }

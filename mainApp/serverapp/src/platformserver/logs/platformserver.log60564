@@ -1,0 +1,8 @@
+<log created="2021/03/08 16:38:00.594727">
+[2021/03/08 16:38:00.599727] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/manager/menumgr/menumgr.go:104[0m) [35mmenu init success[0m
+[2021/03/08 16:38:00.600725] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/main.go:83[0m) [32mserver start at :8801[0m
+[2021/03/08 16:38:36.116580] [EROR] ([31mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/sql/mysqlmgr.go:42[0m) [31mExec mysql error: insert into `t_user` (`username`,`password`,`email`,`group_id`) values('zjw', 'e10adc3949ba59abbe56e057f20f883e', '2538698032@qq.com', 2) Error 1062: Duplicate entry '2538698032@qq.com' for key 'email' 
+[0m
+[2021/03/08 16:38:36.116580] [EROR] ([31mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/net/response.go:48[0m) [31m{"data":"Error 1062: Duplicate entry '2538698032@qq.com' for key 'email'| 请检查邮箱是否已经被使用!","ret":-1}[0m
+[2021/03/08 16:53:16.172274] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/main.go:93[0m) [32mcatch signal interrupt, server ready to shutdown.[0m
+</log>

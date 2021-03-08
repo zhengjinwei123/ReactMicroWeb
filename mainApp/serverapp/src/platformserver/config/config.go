@@ -24,19 +24,9 @@ type xmlMysql struct {
 	Password string `xml:"password"`
 }
 
-type xmlRedis struct {
-	Host string `xml:"host"`
-	Port int `xml:"port"`
-	Database int `xml:"db"`
-	Password string `xml:"password"`
-}
-
 type xmlSession struct {
-	Typ string `xml:"type"`
 	MaxAge int `xml:"maxAge"`
-	IdleTime int `xml:"idleTime"`
-	KeyPrefix string `xml:"keyPrefix"`
-	Redis xmlRedis `xml:"redis"`
+	AuthTokenSecret string `xml:"auth-token-secret"`
 }
 
 type xmlApp struct {
@@ -70,14 +60,6 @@ func GetServerConfig() *serverConfig {
 func (this *serverConfig) GetMysqlAddr() string {
 	return fmt.Sprintf("%s:%s@tcp(%s:%d)/%s", this.Mysql.UserName,
 		this.Mysql.Password, this.Mysql.Host, this.Mysql.Port, this.Mysql.Database)
-}
-
-func (this *serverConfig) GetRedisAddr() string {
-	return fmt.Sprintf("%s:%d", this.Session.Redis.Host, this.Session.Redis.Port)
-}
-
-func (this *serverConfig) IsEnableRedisSession() bool {
-	return this.Session.Typ == "redis"
 }
 
 func LoadServerConfig() error {

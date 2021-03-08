@@ -24,7 +24,6 @@ const LoadingComponent = () => (
     </div>
 )
 
-
 const showLoading = () => {
 
     const newElement = cloneElement(<LoadingComponent />)

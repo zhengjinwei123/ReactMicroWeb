@@ -1,0 +1,66 @@
+<log created="2021/03/05 18:04:16.211623">
+[2021/03/05 18:04:16.217623] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/manager/menumgr/menumgr.go:104[0m) [35mmenu init success[0m
+[2021/03/05 18:04:16.218621] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/main.go:89[0m) [32mserver start at :8801[0m
+[2021/03/05 18:06:18.724131] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:06:18.725132] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:06:24.211385] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:06:24.211385] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:06:25.395003] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/user/login|map[password:[fcea920f7412b5da7be0cf42b8c93759] username:[admin]][0m
+[2021/03/05 18:06:25.396002] [EROR] ([31mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/net/response.go:43[0m) [31m{"data":"password error","ret":-1}[0m
+[2021/03/05 18:06:28.107133] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/user/login|map[password:[e10adc3949ba59abbe56e057f20f883e] username:[admin]][0m
+[2021/03/05 18:06:29.120807] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:06:29.121807] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:07:03.001516] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/05 18:07:17.709180] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/05 18:07:17.709180] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/user/list|map[][0m
+[2021/03/05 18:07:18.425953] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/user/all_menus|map[][0m
+[2021/03/05 18:07:31.209764] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/05 18:07:34.363756] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/05 18:07:42.304206] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:07:42.305203] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:07:50.496579] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/05 18:08:19.037424] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/05 18:08:23.786898] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/05 18:12:34.838612] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:12:34.838612] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:12:40.361840] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/05 18:12:43.270908] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/05 18:13:50.188034] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/05 18:14:21.370218] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:14:21.370218] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:16:26.137606] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:16:26.143599] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:16:40.362039] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/05 18:19:09.546023] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:19:09.547028] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:23:58.427534] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:23:58.427534] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:24:23.804946] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:24:23.804946] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:24:30.994641] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/05 18:24:35.026347] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/05 18:24:38.119355] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/05 18:24:40.547576] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/05 18:24:44.485314] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/05 18:24:46.487670] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/05 18:25:40.525492] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/05 18:26:29.515465] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:26:29.515465] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:26:29.836365] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/05 18:27:05.317411] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:27:05.317411] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:27:11.681374] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/user/logout|map[][0m
+[2021/03/05 18:27:12.862991] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:27:12.862991] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:27:14.092597] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/user/login|map[password:[e10adc3949ba59abbe56e057f20f883e] username:[admin]][0m
+[2021/03/05 18:27:15.354203] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:27:15.354203] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:27:21.501226] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/05 18:27:39.403485] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/05 18:38:28.830768] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:38:28.830768] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:38:56.294289] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:38:56.295287] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:38:57.437921] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:40:27.017126] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/main.go:99[0m) [32mcatch signal interrupt, server ready to shutdown.[0m
+</log>

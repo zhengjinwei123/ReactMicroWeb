@@ -1,0 +1,7 @@
+<log created="2021/03/08 14:27:18.465646">
+[2021/03/08 14:27:18.473645] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/manager/menumgr/menumgr.go:104[0m) [35mmenu init success[0m
+[2021/03/08 14:27:18.474641] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/main.go:96[0m) [32mserver start at :8801[0m
+[2021/03/08 14:27:22.845706] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/services/userservice/user.go:79[0m) [35mlogin msg: map[menus:[0xc000248d20 0xc000248d40] timezone:Asia/Shanghai token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6ImFkbWluIn0.ykWj1zjCNf0OuyX-DxOw6iOVfaoqoB7nVpg0r-IfsA0 webname:工作流管理系统][0m
+[2021/03/08 14:27:26.957797] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:103[0m) [35mz1 json: cannot unmarshal object into Go value of type jwt.Claims[0m
+[2021/03/08 14:28:23.028698] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/main.go:106[0m) [32mcatch signal interrupt, server ready to shutdown.[0m
+</log>

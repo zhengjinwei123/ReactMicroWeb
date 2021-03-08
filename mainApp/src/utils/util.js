@@ -6,11 +6,19 @@ import {message } from "antd"
 import {setUserLogout} from "../services/user"
 
 
-const headerConfig = {
-    headers:{'Content-Type':'application/x-www-form-urlencoded'}
-}
 const postApi= (path, params, callback) => {
     showLoading()
+
+    let token = getStorage("token")
+    let headerConfig = {
+        headers:{
+            'Content-Type':'application/x-www-form-urlencoded'
+        }
+    }
+
+    if (!_.isEmpty(token)) {
+        headerConfig.headers['Authorization'] = token
+    }
 
     axios.post(path, Qs.stringify(params), headerConfig).then( (resp) => {
         hideLoading()

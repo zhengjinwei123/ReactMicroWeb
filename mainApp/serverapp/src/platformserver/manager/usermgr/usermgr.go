@@ -4,6 +4,7 @@ var g_userMgr *UserMgr = nil
 
 type UserInfo struct {
 	Username string
+	GroupId int
 	Status int
 }
 
@@ -13,10 +14,11 @@ type UserMgr struct {
 }
 
 
-func (this *UserMgr) Login(username string, status int) {
+func (this *UserMgr) Login(username string, status int, groupId int) {
 	this.userMap[username] = &UserInfo{
 		Username: username,
 		Status: status,
+		GroupId: groupId,
 	}
 }
 
@@ -30,12 +32,19 @@ func (this *UserMgr) BanUser(username string, status int) {
 	}
 }
 
+func (this *UserMgr) GetGroupId(username string) int {
+	if user, ok := this.userMap[username]; ok {
+		return user.GroupId
+	}
+	return 0
+}
+
 func (this *UserMgr) UserHasBanded(username string) bool {
 	if user, ok := this.userMap[username]; ok {
 		return user.Status != 0
 	}
 
-	return true
+	return false
 }
 
 func (this *UserMgr) Clear() {

@@ -1,0 +1,7 @@
+<log created="2021/03/08 16:26:08.968915">
+[2021/03/08 16:26:08.974974] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/manager/menumgr/menumgr.go:104[0m) [35mmenu init success[0m
+[2021/03/08 16:26:08.976912] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/main.go:83[0m) [32mserver start at :8801[0m
+[2021/03/08 16:26:15.808747] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/services/userservice/user.go:64[0m) [35mlogin token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6ImFkbWluIiwiZXhwIjoxNjE1MTkyMDA1LCJpYXQiOjE2MTUxOTE5NzV9.b21Dh1tuvWfq8rNVN5Tvfjs4u2s5VX7v9woR-lGdTlQ[0m
+[2021/03/08 16:26:27.019704] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/services/userservice/user.go:64[0m) [35mlogin token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6ImFkbWluIiwiZXhwIjoxNjE1MTkyMDE3LCJpYXQiOjE2MTUxOTE5ODd9.X5lpjJz5Fua3ckpPrOWYHf5N5d7f5OxIgm0oO-CBHKo[0m
+[2021/03/08 16:31:31.720301] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/main.go:93[0m) [32mcatch signal interrupt, server ready to shutdown.[0m
+</log>

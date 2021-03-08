@@ -2,6 +2,8 @@ package userservice
 
 import (
 	"net/http"
+	"serverapp/src/base/authorize"
+	"serverapp/src/base/common"
 	l4g "serverapp/src/base/log4go"
 	"serverapp/src/base/orm"
 	"serverapp/src/platformserver/config"
@@ -13,7 +15,6 @@ import (
 	"serverapp/src/platformserver/net"
 	"serverapp/src/platformserver/proto/dbproto"
 	"serverapp/src/platformserver/proto/netproto"
-	"serverapp/src/platformserver/session"
 )
 
 func Login(w http.ResponseWriter, r *http.Request) {
@@ -27,11 +28,6 @@ func Login(w http.ResponseWriter, r *http.Request) {
 	}
 
 	resp := &net.NetResponse{}
-	if session.UserHasLogin(w, r) {
-		resp.Msg = "user has login"
-		resp.SendError(w)
-		return
-	}
 
 	userInfo := &dbproto.DbUserTableInfo{}
 	if err := dbuserservice.GetUser(req.UserName, userInfo); err != nil {
@@ -52,37 +48,32 @@ func Login(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	if err := session.SetUserLogin(req.UserName, userInfo.GroupId,  w, r); err != nil {
-		resp.Msg = "password error"
-		resp.SendError(w)
-		return
-	}
+	servConfig := config.GetServerConfig()
+	now, _ := common.NowTimeIn(servConfig.TimeZone)
+
+	token := authorize.CreateJwtToken(userInfo.UserName,
+		servConfig.Session.AuthTokenSecret, now, int64(servConfig.Session.MaxAge))
 
 	resp.Msg = netproto.H{
+		"token": token,
 		"webname": config.GetServerConfig().WebName,
 		"timezone": config.GetServerConfig().TimeZone,
 		"menus":  menumgr.GetMenuMgr().GetMenusByGroupId(userInfo.GroupId),
 	}
 
-	//usermgr.GetUserMgr().Login(userInfo.UserName, userInfo.Status)
 	eventmgr.UserLogin(userInfo)
 
 	resp.SendMessage(w)
 }
 
 func Logout(w http.ResponseWriter, r *http.Request) {
-
 	resp := &net.NetResponse{}
-	if true == session.UserHasLogin(w, r) {
-		userName := session.GetUserName(w, r)
-		if err := session.SetUserLogout(w, r); err != nil {
-			resp.Msg = err.Error()
-			resp.SendError(w)
-			return
-		}
-
-		eventmgr.UserLogout(userName)
+	userName := r.Context().Value("username")
+	if userName == nil {
+		resp.SendSuccess(w)
+		return
 	}
+	eventmgr.UserLogout(userName.(string))
 
 	resp.SendSuccess(w)
 }
@@ -127,7 +118,10 @@ func AllMenus(w http.ResponseWriter, r *http.Request) {
 }
 
 func GetUserInfo(w http.ResponseWriter, r *http.Request) {
-	groupId := session.GetUserGroupId(w, r)
+
+	userName := r.Context().Value("username").(string)
+
+	groupId := usermgr.GetUserMgr().GetGroupId(userName)
 
 	resp := &net.NetResponse{}
 	resp.Msg = netproto.H{

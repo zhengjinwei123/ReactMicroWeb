@@ -9,18 +9,21 @@ if (!window.__POWERED_BY_QIANKUN__) {
   render()
 }
 
-function render() {
-  ReactDOM.render(<App title="app"/>, document.getElementById('workflow'));
+function render(props) {
+  ReactDOM.render(<App {...props}/>, document.getElementById('workflow'));
 }
 
 export async function bootstrap() {
   console.log('react app bootstraped');
 }
 
-
 export async function mount(props) {
-  console.log('props from main framework', props);
-  render()
+  props.onGlobalStateChange((state, prev) => {
+    // state: 变更后的状态; prev 变更前的状态
+    render({username: state.username})
+  });
+
+  render({})
 }
 
 export async function unmount() {

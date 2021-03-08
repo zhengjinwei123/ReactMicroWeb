@@ -1,0 +1,17 @@
+<log created="2021/03/08 14:48:35.596330">
+[2021/03/08 14:48:35.603327] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/manager/menumgr/menumgr.go:104[0m) [35mmenu init success[0m
+[2021/03/08 14:48:35.604327] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/main.go:96[0m) [32mserver start at :8801[0m
+[2021/03/08 14:48:41.597425] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/services/userservice/user.go:79[0m) [35mlogin token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6ImFkbWluIn0.ykWj1zjCNf0OuyX-DxOw6iOVfaoqoB7nVpg0r-IfsA0[0m
+[2021/03/08 14:48:44.360073] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:95[0m) [35mtoken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6ImFkbWluIn0.ykWj1zjCNf0OuyX-DxOw6iOVfaoqoB7nVpg0r-IfsA0 [0m
+[2021/03/08 14:48:44.360073] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:116[0m) [35mget token ok: admin[0m
+[2021/03/08 14:48:47.040441] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:95[0m) [35mtoken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6ImFkbWluIn0.ykWj1zjCNf0OuyX-DxOw6iOVfaoqoB7nVpg0r-IfsA0 [0m
+[2021/03/08 14:48:47.040441] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:116[0m) [35mget token ok: admin[0m
+[2021/03/08 14:48:47.041441] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:95[0m) [35mtoken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6ImFkbWluIn0.ykWj1zjCNf0OuyX-DxOw6iOVfaoqoB7nVpg0r-IfsA0 [0m
+[2021/03/08 14:48:47.041441] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:116[0m) [35mget token ok: admin[0m
+[2021/03/08 14:48:48.037121] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:95[0m) [35mtoken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6ImFkbWluIn0.ykWj1zjCNf0OuyX-DxOw6iOVfaoqoB7nVpg0r-IfsA0 [0m
+[2021/03/08 14:48:48.037121] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:116[0m) [35mget token ok: admin[0m
+[2021/03/08 14:48:48.739024] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:95[0m) [35mtoken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6ImFkbWluIn0.ykWj1zjCNf0OuyX-DxOw6iOVfaoqoB7nVpg0r-IfsA0 [0m
+[2021/03/08 14:48:48.739024] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:116[0m) [35mget token ok: admin[0m
+[2021/03/08 14:48:48.739024] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:95[0m) [35mtoken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJVc2VyTmFtZSI6ImFkbWluIn0.ykWj1zjCNf0OuyX-DxOw6iOVfaoqoB7nVpg0r-IfsA0 [0m
+[2021/03/08 14:48:48.739024] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:116[0m) [35mget token ok: admin[0m
+</log>

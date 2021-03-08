@@ -39,7 +39,10 @@ GetServerRunInfo((err, data) => {
           language: data.lan
         })
       },
-      activeRule: genActiveRule(`/${data.apps[i].name}`)
+      activeRule: genActiveRule(`/${data.apps[i].name}`),
+      props: {
+        
+      }
     })
   }
   registerMicroApps(apps)

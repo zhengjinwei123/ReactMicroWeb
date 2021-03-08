@@ -1,0 +1,11 @@
+<log created="2021/03/05 18:40:44.469512">
+[2021/03/05 18:40:44.475511] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/manager/menumgr/menumgr.go:104[0m) [35mmenu init success[0m
+[2021/03/05 18:40:44.476512] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/main.go:90[0m) [32mserver start at :8801[0m
+[2021/03/05 18:40:48.725308] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:40:48.726307] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:40:57.298559] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:40:57.298559] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:41:03.621530] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:41:03.621530] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:41:58.300072] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/main.go:100[0m) [32mcatch signal interrupt, server ready to shutdown.[0m
+</log>

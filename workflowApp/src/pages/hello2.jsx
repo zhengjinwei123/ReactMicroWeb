@@ -1,7 +1,7 @@
-const Hello2 = (props) => {
+const Hello2 = ({username}) => {
 
     return (
-        <div>hello2 page</div>
+        <div>hello2 {username}</div>
     )
 }
 

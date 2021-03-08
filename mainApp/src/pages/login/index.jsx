@@ -2,7 +2,7 @@ import React, {useState, useEffect} from "react"
 import {Form, Input, Button, Checkbox, message } from "antd"
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
 
-import {login, setUserLogin, checkUserHasLogin } from "../../services/user"
+import {login, setUserLogin, checkUserHasLogin, setToken } from "../../services/user"
 import { redirectTo } from "../../utils/util"
 import {withRouter} from "react-router-dom";
 import { Helmet } from "react-helmet"
@@ -78,6 +78,7 @@ const Login = ({ userinfoActions, userinfo }) => {
                     window.localStorage.removeItem(account_password)
                 }
 
+                setToken(data.token)
                 setUserLogin({
                     username
                 })

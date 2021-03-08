@@ -60,6 +60,14 @@ const setUserLogin = (userInfo) => {
     setStorage("user_info", userInfo)
 }
 
+const setToken = (token) => {
+    setStorage("token", token)
+}
+
+const getToken = () => {
+    return getStorage("token")
+}
+
 const setUserLogout = () => {
     removeStorage("user_info")
 }
@@ -89,6 +97,8 @@ export {
     UpdateEmailAndGroup,
     GetLoginUserInfo,
 
+    getToken,
+    setToken,
     setUserLogin,
     setUserLogout,
     checkUserHasLogin,

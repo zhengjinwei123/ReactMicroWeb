@@ -4,10 +4,11 @@ import { Layout, PageHeader, Tag, Dropdown , Popover, Menu, BackTop, Avatar, But
 import {AntdIconComponent} from "../helper/index.jsx"
 import { LoadingComponent } from "../PageLoading"
 import { Helmet } from "react-helmet"
-import { logout, setUserLogout, checkUserHasLogin } from "../../services/user"
+import { logout, setUserLogout, checkUserHasLogin, getToken} from "../../services/user"
 import { redirectLogin, redirectTo } from "../../utils/util"
 import _ from "lodash"
 import { FormattedMessage  } from 'react-intl'
+import { initGlobalState} from "qiankun"
 
 import {GetLoginUserInfo} from "../../services/user"
 import UpdatePasswordModal from "../UpdatePasswordModal/index"
@@ -89,12 +90,28 @@ const footerStyle = {
     fontSize: 20,
 }
 
+const actions = initGlobalState({})
+
+const QianKunGlobalStatePatch = (username, token) => {
+    // actions.onGlobalStateChange((state, prev) => {
+
+    // });
+    actions.setGlobalState({
+        username,
+        token
+    })
+}
+
 const MyLayout = (props) => {
 
     if (!checkUserHasLogin()) {
         redirectLogin()
         return;
     }
+
+
+
+    QianKunGlobalStatePatch(props.userinfo.username, getToken())
 
     const [menus, setMenus] = useState(props.userinfo.menus)
     const [collapsed, setCollapsed] = useState(false)

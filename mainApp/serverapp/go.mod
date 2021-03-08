@@ -4,6 +4,7 @@ go 1.14
 
 require (
 	github.com/bwmarrin/snowflake v0.3.0
+	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/dxvgef/sessions v0.7.0
 	github.com/dxvgef/tsing v1.4.2
 	github.com/go-chi/chi v1.5.3

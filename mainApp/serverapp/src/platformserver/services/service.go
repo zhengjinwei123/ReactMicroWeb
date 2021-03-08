@@ -22,10 +22,16 @@ func ServerRunInformation(w http.ResponseWriter, r *http.Request) {
 	}
 
 	// 获取语言包
-
 	resp.Msg = netproto.H{
 		"apps": retList,
 		"lan": config.GetServerConfig().Language,
 	}
+	resp.SendMessage(w)
+}
+
+func Test(w http.ResponseWriter, r *http.Request) {
+	resp := &net.NetResponse{}
+
+	resp.Msg = "Test success zjw"
 	resp.SendMessage(w)
 }

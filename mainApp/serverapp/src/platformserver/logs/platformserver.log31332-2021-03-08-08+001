@@ -1,0 +1,12 @@
+<log created="2021/03/05 18:42:03.773319">
+[2021/03/05 18:42:03.780314] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/manager/menumgr/menumgr.go:104[0m) [35mmenu init success[0m
+[2021/03/05 18:42:03.781314] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/main.go:90[0m) [32mserver start at :8801[0m
+[2021/03/05 18:42:07.180223] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:42:07.181225] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:42:09.804383] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/user/login|map[password:[e10adc3949ba59abbe56e057f20f883e] username:[admin]][0m
+[2021/03/05 18:42:10.954014] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:42:10.954014] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:42:14.762799] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:42:48.940248] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/05 18:42:48.978236] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+</log>

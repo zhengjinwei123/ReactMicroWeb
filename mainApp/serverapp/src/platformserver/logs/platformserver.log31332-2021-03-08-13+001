@@ -1,0 +1,13 @@
+<log created="2021/03/08 09:31:42.169746">
+[2021/03/08 09:31:42.166747] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/08 09:31:42.168746] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/08 09:31:46.391393] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/08 09:31:46.391393] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/08 09:31:47.563016] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/user/login|map[password:[e10adc3949ba59abbe56e057f20f883e] username:[admin]][0m
+[2021/03/08 09:31:48.802617] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/08 09:31:48.802617] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/08 09:32:08.080689] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+[2021/03/08 09:42:43.777628] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/08 09:42:43.777628] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/server_run_info|map[][0m
+[2021/03/08 09:42:43.941577] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:49[0m) [35mrequest: /api/group/all|map[][0m
+</log>
