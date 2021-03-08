@@ -35,6 +35,10 @@ func main() {
 	runtime.GOMAXPROCS(runtime.NumCPU())
 	flag.Parse()
 
+	if err := config.LoadServerConfig(); err != nil {
+		common.PanicExt(err.Error())
+	}
+
 	serverConfig := config.GetServerConfig()
 	l4g.LoadConfigurationWithPid(serverConfig.Log.Config)
 	defer l4g.Close()
@@ -50,6 +54,8 @@ func main() {
 	r.Use(middleware.Timeout(20 * time.Second))
 
 	r.Route("/api", func(r chi.Router) {
+		r.Use(JwtAuthenticationMiddleware)
+
 		r.Post("/user_info", services.UserInfo)
 	})
 

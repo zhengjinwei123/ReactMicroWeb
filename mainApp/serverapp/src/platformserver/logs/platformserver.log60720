@@ -1,3 +1,5 @@
-<log created="2021/03/08 16:57:49.675362">
-[2021/03/08 16:57:49.680360] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/manager/menumgr/menumgr.go:104[0m) [35mmenu init success[0m
-[2021/03/08 16:57:49.681359] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/main.go:83[0m) [32mserver start at :8801[0m
+<log created="2021/03/08 17:14:06.916536">
+[2021/03/08 17:14:06.916536] [EROR] ([31mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/net/response.go:48[0m) [31m{"data":"data not changed","ret":-1}[0m
+[2021/03/08 17:14:17.478565] [EROR] ([31mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/net/response.go:48[0m) [31m{"data":"password error","ret":-1}[0m
+[2021/03/08 17:43:06.028400] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/main.go:93[0m) [32mcatch signal interrupt, server ready to shutdown.[0m
+</log>

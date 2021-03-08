@@ -18,8 +18,8 @@ CREATE TABLE  `t_task` (
     `predict_cost_minute` int(10) NOT NULL DEFAULT 0 COMMENT '预估耗时,单位分钟',
     `files` varchar(1024) NOT NULL DEFAULT '' COMMENT '关联的文件名, 按逗号分隔',
     `status` tinyint(2) NOT NULL DEFAULT 0 COMMENT '任务状态 0:未开始 1：进行中 2：测试中 3： 已完成  4：验收完毕',
-    `modify_time` timestamp DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP  COMMENT '更新时间',
-    `create_time` timestamp DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+    `modify_time` datetime NOT NULL  COMMENT '更新时间',
+    `create_time` datetime NOT NULL COMMENT '创建时间',
     PRIMARY KEY (`id`),
     KEY `idx_status`(`status`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -27,7 +27,7 @@ CREATE TABLE  `t_task` (
 CREATE TABLE  `t_user_task` (
     `user_name` varchar(40) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '' COMMENT '用户名',
     `task_id` int(10) NOT NULL DEFAULT 0 COMMENT '任务id',
-    `create_time` timestamp DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+    `create_time` datetime NOT NULL COMMENT '创建时间',
     PRIMARY KEY (`user_name`,`task_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -37,9 +37,9 @@ CREATE TABLE  `t_task_log` (
     `task_id` int(10) NOT NULL DEFAULT 0 COMMENT '任务id',
     `operator` varchar(40) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL DEFAULT '' COMMENT '操作者',
     `content` varchar(1024) NOT NULL DEFAULT '' COMMENT '日志内容',
-    `create_time` timestamp DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+    `create_time` datetime NOT NULL COMMENT '创建时间',
     PRIMARY KEY (`id`),
     KEY `idx_task_id` (`task_id`),
-    KEY `idx_operator` (`operator`),
+    KEY `idx_operator` (`operator`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 

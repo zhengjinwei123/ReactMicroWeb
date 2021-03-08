@@ -17,6 +17,10 @@ type xmlLog struct {
 	Config string `xml:"config"`
 }
 
+type xmlSession struct {
+	AuthTokenSecret string `xml:"auth-token-secret"`
+}
+
 type xmlMysql struct {
 	Host string `xml:"host"`
 	Port int `xml:"port"`
@@ -29,6 +33,8 @@ type serverConfig struct {
 	Http           string   `xml:"http"`
 	Log            xmlLog   `xml:"log"`
 	Mysql          xmlMysql `xml:"mysql"`
+	Session        xmlSession `xml:"session"`
+	TimeZone       string `xml:"time-zone"`
 }
 
 func newServerConfig() *serverConfig {

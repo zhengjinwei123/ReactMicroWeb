@@ -4,6 +4,10 @@
         <config>../settings/log_config.xml</config>
     </log>
     <http>:8802</http>
+    <time-zone>Asia/Shanghai</time-zone>
+    <session>
+        <auth-token-secret>auth_token_secret_some1</auth-token-secret>
+    </session>
 
     <mysql>
         <host>10.235.102.249</host>

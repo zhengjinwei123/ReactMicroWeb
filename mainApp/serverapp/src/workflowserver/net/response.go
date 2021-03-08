@@ -20,6 +20,9 @@ type response struct {
 func outputJson(data interface{}, ret int, w http.ResponseWriter) {
 	w.Header().Set("Content-Type", "application/json; charset=utf-8")
 	w.Header().Set("Access-Control-Allow-Origin", "*")
+	w.Header().Add("Access-Control-Allow-Headers", "content-type,Authorization")
+	w.Header().Add("Access-Control-Allow-Credentials", "true")
+	w.Header().Add("Access-Control-Allow-Methods", "POST, GET, OPTIONS, DELETE")
 	w.WriteHeader(200)
 
 	resp := &response{
