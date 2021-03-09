@@ -1,0 +1,4 @@
+<log created="2021/03/08 18:30:46.542691">
+[2021/03/08 18:30:46.548693] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/manager/menumgr/menumgr.go:104[0m) [35mmenu init success[0m
+[2021/03/08 18:30:46.549688] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/main.go:88[0m) [32mserver start at :8801[0m
+</log>

@@ -1,21 +1,16 @@
 import React, {useState, useEffect, useRef } from "react";
 import { withRouter } from "react-router-dom";
 import { Layout, PageHeader, Tag, Dropdown , Popover, Menu, BackTop, Avatar, Button, Breadcrumb} from 'antd';
-import {AntdIconComponent} from "../helper/index.jsx"
+import {AntdIconComponent, Translate} from "../helper/index.jsx"
 import { LoadingComponent } from "../PageLoading"
 import { Helmet } from "react-helmet"
 import { logout, setUserLogout, checkUserHasLogin, getToken} from "../../services/user"
 import { redirectLogin, redirectTo } from "../../utils/util"
 import _ from "lodash"
-import { FormattedMessage  } from 'react-intl'
 import { initGlobalState} from "qiankun"
 
 import {GetLoginUserInfo} from "../../services/user"
 import UpdatePasswordModal from "../UpdatePasswordModal/index"
-
-
-
-// import "./index.css"
 
 const { Header, Content, Sider, Footer } = Layout;
 const { SubMenu } = Menu
@@ -191,13 +186,13 @@ const MyLayout = (props) => {
         <h2>{props.userinfo.webname}</h2>
     )
     const subTitleNode = (
-        <h4><Tag color="geekblue">当前时区: {props.userinfo.timezone} <FormattedMessage id="hello"/></Tag></h4>
+        <h4><Tag color="geekblue"><Translate id="timezone" />: {props.userinfo.timezone}</Tag></h4>
     )
     const userDropDownNode = () => {
         return (
             <Menu>
-                <Menu.Item><a href="@" onClick={handleLogout}>登出</a></Menu.Item>
-                <Menu.Item><a  href="@" onClick={updatePassword}>修改密碼</a></Menu.Item>
+                <Menu.Item><a href="@" onClick={handleLogout}><Translate id="logout" /></a></Menu.Item>
+                <Menu.Item><a  href="@" onClick={updatePassword}><Translate id="updatePassword" /></a></Menu.Item>
             </Menu>
         )
     }
@@ -236,6 +231,15 @@ const MyLayout = (props) => {
         </Menu>
     )
 
+    const UserDescNode = () => {
+        return (
+            <>
+                <Translate id="currentUser" />
+                <span>{":" + props.userinfo.username + "(" + props.userinfo.nickname + ")"}</span>
+            </>
+        )
+    }
+
     return (
         <>
              <Helmet>
@@ -256,7 +260,7 @@ const MyLayout = (props) => {
                         </div>
                         <div className="header-right">
                             <Dropdown overlay={userDropDownNode}>
-                                <Popover placement="leftTop" content={"当前用户:" + props.userinfo.username}>
+                                <Popover placement="leftTop" content={UserDescNode}>
                                     <a href="##">
                                         <Avatar
                                             style={{
@@ -304,7 +308,7 @@ const MyLayout = (props) => {
                 
                 <Footer style={footerStyle}>
                         {props.userinfo.webname}
-                        <a href="/#">www.baidu.com</a>
+                        <a href="/#"></a>
                 </Footer>
                 <UpdatePasswordModal ref={(el) => { updatePasswordModalRef.current = el }}/>
                 <style jsx>{`

@@ -1,6 +1,6 @@
 import { Input, Form, Button, message,Modal } from 'antd';
 import React, { useState, useImperativeHandle, forwardRef } from 'react';
-
+import {Translate} from "../helper/index.jsx"
 import { UpdatePassword } from "../../services/user"
 import md5 from "js-md5"
 
@@ -52,7 +52,7 @@ const UpdatePasswordModal = forwardRef((props, ref) => {
     }));
 
     return (
-        <Modal footer={null} maskClosable={false} title="修改密码" visible={isModalVisible}  onCancel={() => showUpdatePasswordModal(false, username)}>
+        <Modal footer={null} maskClosable={false} title={<Translate id="updatePassword"/>} visible={isModalVisible}  onCancel={() => showUpdatePasswordModal(false, username)}>
             <Form
                 {...layout}
                 name="update_password_dialog"
@@ -60,7 +60,7 @@ const UpdatePasswordModal = forwardRef((props, ref) => {
                 form={updatePasswordForm}
                 >
 
-                <Form.Item label="密码"
+                <Form.Item label={<Translate id="password"/>}
                     name="password" rules={[
                         {
                             required: true,
@@ -72,7 +72,7 @@ const UpdatePasswordModal = forwardRef((props, ref) => {
 
                 <Form.Item
                     name="confirm"
-                    label="确认密码"
+                    label={ <Translate id="confirmPassword"/>}
                     dependencies={['password']}
                     hasFeedback
                     rules={[
@@ -96,7 +96,7 @@ const UpdatePasswordModal = forwardRef((props, ref) => {
 
                 <Form.Item {...tailLayout}>
                     <Button type="primary" htmlType="submit">
-                    Submit
+                    <Translate id="submit"/>
                     </Button>
                 </Form.Item>
             </Form>

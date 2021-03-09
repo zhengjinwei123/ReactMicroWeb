@@ -8,6 +8,7 @@ import {withRouter} from "react-router-dom";
 import { Helmet } from "react-helmet"
 import _ from "lodash"
 import md5 from "js-md5"
+import {injectIntl} from 'react-intl'
 
 const loginFormStyle = {
     display: 'flex',
@@ -37,7 +38,7 @@ const formStyle = {
     textAlign: 'center'
 }
 
-const Login = ({ userinfoActions, userinfo }) => {
+const Login = ({ userinfoActions, userinfo, intl }) => {
 
     // console.log("login userinfo", userinfo)
 
@@ -80,11 +81,13 @@ const Login = ({ userinfoActions, userinfo }) => {
 
                 setToken(data.token)
                 setUserLogin({
-                    username
+                    username,
+                    nickname: data.nickname
                 })
 
                 userinfoActions.login({
                     username: username,
+                    nickname: data.nickname,
                     menus: data.menus,
                     webname: data.webname,
                     timezone: data.timezone,
@@ -136,7 +139,7 @@ const Login = ({ userinfoActions, userinfo }) => {
     return (
         <>
             <Helmet>
-                <title>X2GAME 游戏管理系统-登录</title>
+                <title>{intl.formatMessage({id: "login"})}</title>
             </Helmet>
             <div className="container">
             <div style={loginFormStyle}>
@@ -174,22 +177,22 @@ const Login = ({ userinfoActions, userinfo }) => {
                     <Form.Item>
 
                         <Form.Item name="remember" valuePropName="checked">
-                            <Checkbox onChange={rememberChange}>Remember me</Checkbox>
+                            <Checkbox onChange={rememberChange}>{intl.formatMessage({id: "rememberPassword"})}</Checkbox>
                         </Form.Item>
                         
 
                         <Button htmlType="button" onClick={onReset}>
-                          Reset
+                        {intl.formatMessage({id: "reset"})}
                         </Button>
 
                         <a className="login-form-forgot" href="/#" style={{float: 'right'}}>
-                            Forgot password
+                        {intl.formatMessage({id: "forgotPassword"})}
                         </a>
                     </Form.Item>
 
                     <Form.Item>
                         <Button type="primary" htmlType="submit" style={{width: '100%'}} onClick={onLogin}>
-                        Log in
+                        {intl.formatMessage({id: "login"})}
                         </Button>
                     </Form.Item>               
                 </Form>
@@ -208,4 +211,4 @@ const Login = ({ userinfoActions, userinfo }) => {
     )
 }
 
-export default withRouter(Login)
+export default injectIntl(withRouter(Login))

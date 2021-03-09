@@ -20,7 +20,7 @@ func GetUser(username string, userInfo *dbproto.DbUserTableInfo) error {
 	return nil
 }
 
-func AddUser(username, password, email string, groupId int) error {
+func AddUser(username, password, email string, groupId int, nickName string) error {
 	proxy := sql.GetMysqlProxy()
 
 	cnt, err := proxy.GetCount(fmt.Sprintf("select `username` from `%s` where username='%s'", table_name, username))
@@ -32,8 +32,8 @@ func AddUser(username, password, email string, groupId int) error {
 		return errors.New(fmt.Sprintf("user %s has exists", username))
 	}
 
-	err = proxy.Insert(fmt.Sprintf("insert into `%s` (`username`,`password`,`email`,`group_id`) values(" +
-		"'%s', '%s', '%s', %d)", table_name, username, password, email, groupId))
+	err = proxy.Insert(fmt.Sprintf("insert into `%s` (`username`,`password`,`email`,`group_id`,`nickname`) values(" +
+		"'%s', '%s', '%s', %d, '%s')", table_name, username, password, email, groupId, nickName))
 
 	return err
 }
@@ -92,10 +92,10 @@ func UpdateEmail(username, email string) error {
 	return nil
 }
 
-func UpdateEmailAndGroup(username, email string, groupId int) error {
+func UpdateEmailAndGroup(username, email string, groupId int, nickname string) error {
 	proxy := sql.GetMysqlProxy()
 
-	err, updated := proxy.Update(fmt.Sprintf("update `%s` set `email`='%s',`group_id`=%d where `username`='%s'", table_name, email, groupId, username))
+	err, updated := proxy.Update(fmt.Sprintf("update `%s` set `email`='%s',`group_id`=%d, `nickname`='%s' where `username`='%s'", table_name, email, groupId, nickname, username))
 	if err != nil {
 		return err
 	}

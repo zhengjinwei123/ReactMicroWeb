@@ -17,8 +17,13 @@ type NetUserLoginRequest struct {
 	Password string `http:"password"`
 }
 
+type NetUserDelRequest struct {
+	UserName string `http:"username"`
+}
+
 type NetUserRegisterRequest struct {
 	UserName string `http:"username"`
+	NickName string `http:"nickname"`
 	Password string `http:"password"`
 	Email string `http:"email"`
 	GroupId int `http:"group_id"`
@@ -47,6 +52,7 @@ type NetUpdateEmailAndGroupRequest struct {
 	UserName string `http:"username"`
 	Email string `http:"email"`
 	GroupId int `http:"group_id"`
+	NickName string `http:"nickname"`
 }
 
 type NetUserUpdatePasswordRequest struct {

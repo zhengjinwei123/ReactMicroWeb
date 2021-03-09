@@ -1,8 +1,11 @@
 import { Table, Input, InputNumber, Popconfirm, Form, Typography, Button, Space, Select, message, Badge,Modal } from 'antd';
 import React, { useState, useEffect,useRef } from 'react';
+import { ExclamationCircleOutlined } from '@ant-design/icons';
 const { Option } = Select;
 
-import { GetUserList, BanUser,UpdateEmailAndGroup } from "../../services/user"
+import {injectIntl} from 'react-intl'
+
+import { GetUserList, BanUser,UpdateEmailAndGroup,DelUser } from "../../services/user"
 import UpdatePasswordModal from "../UpdatePasswordModal/index"
 
 
@@ -61,7 +64,7 @@ const EditableCell = ({
     );
 };
 
-const EditableTable = ({user_groups}) => {
+const EditableTable = ({user_groups, intl}) => {
     const [form] = Form.useForm();
     const [data, setData] = useState([]);
     const [editingKey, setEditingKey] = useState('');
@@ -78,6 +81,7 @@ const EditableTable = ({user_groups}) => {
                 for (let i = 0; i < data.length; i++) {
                     let obj = data[i]
                     obj.key = obj.user_name;
+                    obj.nickname = obj.nickname;
                     obj.status = obj.status;
                     obj.group = obj.group_id + "(" + obj.group_name + ")"
                     tmp.push(obj)
@@ -105,6 +109,25 @@ const EditableTable = ({user_groups}) => {
         })
     }
 
+    const delUser = (username) => {
+
+      Modal.confirm({
+          title: intl.formatMessage({id: "delUser"}),
+          icon: <ExclamationCircleOutlined />,
+          content: intl.formatMessage({id: "confirmDel"}),
+          onOk: () => {
+            DelUser(username, (err, data) => {
+              if (!err) {
+                  getUserList()
+              }
+            })
+          },
+          onCancel: () => {
+
+          },
+      });
+    }
+
     const edit = (record) => {
       form.setFieldsValue({
         user_name: '',
@@ -125,7 +148,6 @@ const EditableTable = ({user_groups}) => {
     const showUpdatePasswordModal = (show, username) => {
 
         if (updatePasswordModalRef.current) {
-            console.log("fuck 555")
             updatePasswordModalRef.current.showUpdatePasswordModal(show, username)
         }
     }
@@ -157,7 +179,7 @@ const EditableTable = ({user_groups}) => {
             return;
         }
 
-        UpdateEmailAndGroup(key,  row.email, group_id, (err, data) => {
+        UpdateEmailAndGroup(key,  row.email, group_id, row.nickname, (err, data) => {
             if (!err) {
                 if (index > -1) {
                     const item = newData[index];
@@ -186,9 +208,15 @@ const EditableTable = ({user_groups}) => {
           editable: false,
         },
         {
+          title: 'nickname',
+          dataIndex: 'nickname',
+          width: '10%',
+          editable: true,
+        },
+        {
           title: 'email',
           dataIndex: 'email',
-          width: '20%',
+          width: '10%',
           editable: true,
         },
         {
@@ -223,10 +251,10 @@ const EditableTable = ({user_groups}) => {
                     marginRight: 8,
                   }}
                 >
-                  Save
+                  {intl.formatMessage({id: "save"})}
                 </a>
                 <Popconfirm title="Sure to cancel?" onConfirm={cancel}>
-                  <a>Cancel</a>
+                  <a>{intl.formatMessage({id: "cancel"})}</a>
                 </Popconfirm>
               </span>
             ) : (
@@ -235,11 +263,14 @@ const EditableTable = ({user_groups}) => {
                         record.key != "admin" ? (
                             <>
                                  <Typography.Link disabled={editingKey !== ''} onClick={() => edit(record)}>
-                                    编辑
+                                    {intl.formatMessage({id: "edit"})}
                                 </Typography.Link>
-                                <Button onClick={() => showUpdatePasswordModal(true, record.key)}>修改密码</Button>
+                                <Button onClick={() => showUpdatePasswordModal(true, record.key)}>{intl.formatMessage({id: "updatePassword"})}</Button>
                                  <Button type="primary" danger={record.status == '1' ? true : false } onClick={ () => banUser(record.key, record.status)}>
-                                    {record.status == '0' ? "封禁" : "解封"}
+                                    {record.status == '0' ? intl.formatMessage({id: "ban"}) : intl.formatMessage({id: "deban"})}
+                                </Button>
+                                <Button type="primary" danger={true} onClick={ () => delUser(record.key)}>
+                                    {intl.formatMessage({id: "delete"})}
                                 </Button>
                             </>
                            
@@ -294,4 +325,4 @@ const EditableTable = ({user_groups}) => {
       );
 };
 
-export default EditableTable
+export default injectIntl(EditableTable)

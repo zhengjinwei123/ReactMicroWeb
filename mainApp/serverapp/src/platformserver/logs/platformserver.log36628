@@ -1,0 +1,6 @@
+<log created="2021/03/08 18:09:01.760254">
+[2021/03/08 18:09:01.766252] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/manager/menumgr/menumgr.go:104[0m) [35mmenu init success[0m
+[2021/03/08 18:09:01.768253] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/main.go:88[0m) [32mserver start at :8801[0m
+[2021/03/08 18:14:33.557127] [EROR] ([31mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/net/response.go:48[0m) [31m{"data":"data not changed","ret":-1}[0m
+[2021/03/08 18:23:56.316189] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/main.go:98[0m) [32mcatch signal interrupt, server ready to shutdown.[0m
+</log>

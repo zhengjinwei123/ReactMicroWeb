@@ -44,14 +44,20 @@ const BanUser = (username, status, callback) => {
     })
 }
 
+const DelUser = (username, callback) => {
+    postApi("/api/user/remove", {username}, (err, data) => {
+        callback(err, data)
+    })
+}
+
 const UpdatePassword = (username, password, callback) => {
     postApi("/api/user/update_password", {username, password}, (err, data) => {
         callback(err, data)
     })
 }
 
-const UpdateEmailAndGroup = (username, email, groupId, callback) => {
-    postApi("/api/user/update_email_group", {username, email, group_id: groupId}, (err, data) => {
+const UpdateEmailAndGroup = (username, email, groupId, nickname, callback) => {
+    postApi("/api/user/update_email_group", {username, email, group_id: groupId, nickname}, (err, data) => {
         callback(err, data)
     })
 }
@@ -93,6 +99,7 @@ export {
     GetAllMenus,
     GetUserList,
     BanUser,
+    DelUser,
     UpdatePassword,
     UpdateEmailAndGroup,
     GetLoginUserInfo,

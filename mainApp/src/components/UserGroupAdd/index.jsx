@@ -2,14 +2,15 @@ import { Form, Checkbox, Input, Divider, Button, List, message } from 'antd';
 import { useState, useEffect } from "react"
 import { GetAllMenus } from "../../services/user"
 import { addGroup } from "../../services/group"
-
+import {Translate} from "../helper/index.jsx"
+import {injectIntl} from 'react-intl'
 const CheckboxGroup = Checkbox.Group;
 import {AntdIconComponent} from "../helper/index"
 import _ from "lodash"
 
 const layout = {
     labelCol: {
-      span: 4,
+      span: 4, 
     },
     wrapperCol: {
       span: 8,
@@ -29,7 +30,7 @@ const formStyle = {
     justifyContent: 'space-between',
 }
 
-const UserGroupAddComponent = ({requireGroupName, initialCheckedList, onSubmit, updateItem}) => {
+const UserGroupAddComponent = ({requireGroupName, initialCheckedList, onSubmit, updateItem, intl}) => {
 
     const [form] = Form.useForm();
     const [datas, setDatas] = useState([])
@@ -140,7 +141,7 @@ const UserGroupAddComponent = ({requireGroupName, initialCheckedList, onSubmit, 
             <Form className={formStyle} {...layout} form={form} name="user_group_add_form" onFinish={onFinish}>
                 {
                     requireGroupName ?
-                        (<Form.Item name="group_name" label="group_name" rules={[
+                        (<Form.Item name="group_name" label={intl.formatMessage({id: "userGroup"})} rules={[
                             {
                                 required: true,
                             }
@@ -166,7 +167,7 @@ const UserGroupAddComponent = ({requireGroupName, initialCheckedList, onSubmit, 
                 <Divider />
                 <Form.Item {...tailLayout}>
                     <Button type="primary" htmlType="submit">
-                    Submit
+                    <Translate id="submit"/>
                     </Button>
                 </Form.Item>
             </Form>
@@ -174,4 +175,4 @@ const UserGroupAddComponent = ({requireGroupName, initialCheckedList, onSubmit, 
     )
 }
 
-export default UserGroupAddComponent
+export default injectIntl(UserGroupAddComponent)

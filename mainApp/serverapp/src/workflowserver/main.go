@@ -43,6 +43,11 @@ func main() {
 	l4g.LoadConfigurationWithPid(serverConfig.Log.Config)
 	defer l4g.Close()
 
+	// timeZone check
+	if _, err := common.NowTimeIn(serverConfig.TimeZone); err != nil {
+		common.PanicExt(err.Error())
+	}
+
 	if err := sql.GetMysqlProxy().Init(config.GetServerConfig().GetMysqlAddr()); err != nil {
 		common.PanicExt(err.Error())
 	}

@@ -56,6 +56,7 @@ func Login(w http.ResponseWriter, r *http.Request) {
 
 	resp.Msg = netproto.H{
 		"token": token,
+		"nickname": userInfo.NickName,
 		"webname": config.GetServerConfig().WebName,
 		"timezone": config.GetServerConfig().TimeZone,
 		"menus":  menumgr.GetMenuMgr().GetMenusByGroupId(userInfo.GroupId),
@@ -96,7 +97,7 @@ func Register(w http.ResponseWriter, r *http.Request) {
 	}
 
 
-	if err := dbuserservice.AddUser(req.UserName, req.Password, req.Email, req.GroupId); err != nil {
+	if err := dbuserservice.AddUser(req.UserName, req.Password, req.Email, req.GroupId, req.NickName); err != nil {
 		resp.Msg = err.Error() + "| 请检查邮箱是否已经被使用!"
 		resp.SendError(w)
 		return
@@ -106,7 +107,22 @@ func Register(w http.ResponseWriter, r *http.Request) {
 }
 
 func Delete(w http.ResponseWriter, r *http.Request) {
+	req := &netproto.NetUserDelRequest{}
+	err := orm.UnmarshalHttpValues(req, r.PostForm)
 
+	if err != nil {
+		_ = l4g.Error("UnmarshalHttpValues error: [%v] %v \n", r.PostForm, err)
+		return
+	}
+	resp := &net.NetResponse{}
+
+	if err := dbuserservice.DelUser(req.UserName); err != nil {
+		resp.Msg = err.Error()
+		resp.SendError(w)
+		return
+	}
+
+	resp.SendSuccess(w)
 }
 
 func AllMenus(w http.ResponseWriter, r *http.Request) {
@@ -210,7 +226,7 @@ func UpdateEmailAndGroup(w http.ResponseWriter, r *http.Request) {
 	}
 
 	resp := &net.NetResponse{}
-	if err := dbuserservice.UpdateEmailAndGroup(req.UserName, req.Email, req.GroupId); err != nil {
+	if err := dbuserservice.UpdateEmailAndGroup(req.UserName, req.Email, req.GroupId, req.NickName); err != nil {
 		resp.Msg = err.Error()
 		resp.SendError(w)
 		return

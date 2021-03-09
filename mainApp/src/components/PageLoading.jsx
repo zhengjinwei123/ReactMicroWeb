@@ -4,8 +4,10 @@ import { cloneElement } from "react"
 
 const containerId = "zjw-loging-container"
 const LoadingComponent = () => (
+
+    
     <div id="zjw-loading">
-        <Spin size="large" tip="加载中..."/>
+        <Spin size="large" tip="loading..."/>
         <style jsx>{`
             #zjw-loading {
                 position: fixed;

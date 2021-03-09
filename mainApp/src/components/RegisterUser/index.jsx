@@ -1,6 +1,7 @@
 import React from 'react';
 import {register } from "../../services/user"
 import md5 from "js-md5"
+import {Translate} from "../helper/index.jsx"
 
 import {
     Form,
@@ -64,7 +65,7 @@ const RegistrationForm = ({user_groups}) => {
             message.error(err)
             return;
           }
-          message.info("注册成功")
+          message.info("success")
           form.resetFields();
       })
     };
@@ -84,8 +85,8 @@ const RegistrationForm = ({user_groups}) => {
           name="username"
           label={
             <span>
-              用户名&nbsp;
-              <Tooltip title="What do you want others to call you?">
+              <Translate id="username"/>&nbsp;
+              <Tooltip title="you account name?">
                 <QuestionCircleOutlined />
               </Tooltip>
             </span>
@@ -100,10 +101,31 @@ const RegistrationForm = ({user_groups}) => {
         >
           <Input />
         </Form.Item>
+
+        <Form.Item
+          name="nickname"
+          label={
+            <span>
+              <Translate id="nickname"/>&nbsp;
+              <Tooltip title="What do you want others to call you?">
+                <QuestionCircleOutlined />
+              </Tooltip>
+            </span>
+          }
+          rules={[
+            {
+              required: true,
+              message: 'Please input your nickname!',
+              whitespace: true,
+            },
+          ]}
+        >
+          <Input />
+        </Form.Item>
   
         <Form.Item
           name="password"
-          label="密码"
+          label={<Translate id="password"/>}
           rules={[
             {
               required: true,
@@ -117,7 +139,7 @@ const RegistrationForm = ({user_groups}) => {
   
         <Form.Item
           name="confirm"
-          label="确认密码"
+          label={<Translate id="confirmPassword"/>}
           dependencies={['password']}
           hasFeedback
           rules={[
@@ -140,7 +162,7 @@ const RegistrationForm = ({user_groups}) => {
         </Form.Item>
         <Form.Item
           name="email"
-          label="电子邮箱"
+          label={<Translate id="email"/>}
           rules={[
             {
               type: 'email',
@@ -155,7 +177,8 @@ const RegistrationForm = ({user_groups}) => {
           <Input />
         </Form.Item>
 
-        <Form.Item label="用户组" name="group_id"
+        <Form.Item label={<Translate id="userGroup"/>}
+        name="group_id"
              rules={[
                 {
                   required: true,
@@ -175,7 +198,7 @@ const RegistrationForm = ({user_groups}) => {
        
         <Form.Item {...tailFormItemLayout}>
           <Button type="primary" htmlType="submit">
-            Register
+          {<Translate id="register"/>}
           </Button>
         </Form.Item>
       </Form>
