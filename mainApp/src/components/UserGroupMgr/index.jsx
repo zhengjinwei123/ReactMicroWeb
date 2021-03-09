@@ -1,14 +1,13 @@
 import { Table, Button, Space, Modal } from 'antd';
 import { ExclamationCircleOutlined } from '@ant-design/icons';
-import { useState, useEffect, forwardRef, useImperativeHandle } from "react"
+import { useState, useEffect } from "react"
 import _ from "lodash"
 import { updateGroupMenus,getAllGroups, deleteGroup } from "../../services/group"
 import {injectIntl} from 'react-intl'
 
-
 import UserGroupAddComponent from "../../components/UserGroupAdd/index"
 
-const UserGroupManager = injectIntl(forwardRef((props, ref) => {
+const UserGroupManager = (props) => {
 
     const {intl} = props
 
@@ -38,44 +37,46 @@ const UserGroupManager = injectIntl(forwardRef((props, ref) => {
         });
     }
 
+    const processData = (datas) => {
+        let tmp = [];
+        console.log("load zjw11222")
+        datas.map((item, idx) => {
+            let options = [];
+            const models = item.menus;
+
+            for (let i = 0; i < models.length; i++) {
+
+                const m = models[i]
+                for (let j = 0 ; j < m.c.length; j++) {
+                    const desc1 = m.c[j].name + m.c[j].module
+                    options.push(desc1)
+                }
+            }
+            tmp.push({
+                group_id: item.group_id,
+                group_name: item.group_name,
+                key: idx,
+                expandable: false, 
+                isEditing: false,
+                initialCheckedList: options,
+            })
+        })
+
+        console.log("load zjw11555")
+        setDatas(tmp)
+    }
+
     const loadAllGroups = () => {
         getAllGroups((err, data) => {
             if (!err) {
-                let tmp = [];
-                data.map((item, idx) => {
-                    let options = [];
-                    const models = item.menus;
-
-                    for (let i = 0; i < models.length; i++) {
-
-                        const m = models[i]
-                        for (let j = 0 ; j < m.c.length; j++) {
-                            const desc1 = m.c[j].name + m.c[j].module
-                            options.push(desc1)
-                        }
-                    }
-                    tmp.push({
-                        group_id: item.group_id,
-                        group_name: item.group_name,
-                        key: idx,
-                        expandable: false, 
-                        isEditing: false,
-                        initialCheckedList: options,
-                    })
-                })
-
-                setDatas(tmp)
+                processData(data)
             }
         })
     }
 
-    useImperativeHandle(ref, () => ({
-        loadAllGroups
-    }));
-
     useEffect(() => {
         loadAllGroups()
-    }, [dataChanged])
+    }, [dataChanged, props.changed])
 
 
     const handleEdit = (record) => {
@@ -141,9 +142,6 @@ const UserGroupManager = injectIntl(forwardRef((props, ref) => {
           </Space>
         },
     ];
-
-    // expandIconAsCell={false}
-    // expandedRowKeys={[]}
     return (
         <Table
             columns={columns}
@@ -162,6 +160,6 @@ const UserGroupManager = injectIntl(forwardRef((props, ref) => {
             dataSource={datas}
         />
     )
-}))
+}
 
-export default UserGroupManager
+export default injectIntl(UserGroupManager)

@@ -1,6 +1,6 @@
 import { Tabs} from 'antd';
 import { UserAddOutlined, UsergroupAddOutlined, UserOutlined, UserSwitchOutlined } from '@ant-design/icons';
-import { useState, useEffect, useRef } from "react"
+import { useState, useEffect } from "react"
 import _ from "lodash"
 import {getAllGroups } from "../../services/group"
 import {injectIntl} from 'react-intl'
@@ -16,7 +16,7 @@ export default injectIntl(({intl}) => {
 
     const [userGroups, setUserGroups] = useState([])
     const [activekey, setActivekey] = useState(1)
-    const userGroupMgrCompRef = useRef(null)
+    const [changed, setChanged] = useState(true)
 
     const onChange = (activeKey) => {
         setActivekey(activeKey)
@@ -31,13 +31,11 @@ export default injectIntl(({intl}) => {
                     setUserGroups([...tmp])
                 }
             })
-        }
-
-        if (activekey == 4 && userGroupMgrCompRef.current) {
-            userGroupMgrCompRef.current.loadAllGroups();
+        } else if (activekey == 4) {
+            setChanged(!changed)
         }
        
-    }, [activekey, userGroupMgrCompRef])
+    }, [activekey])
 
     return (
         <div>
@@ -86,9 +84,9 @@ export default injectIntl(({intl}) => {
                     }
                     key="4"
                 >
-               <UserGroupManager ref={ (el) => {userGroupMgrCompRef.current = el} }/>
+                <UserGroupManager changed={changed} />
                 </TabPane>
             </Tabs>
         </div>
     )
-})
+}, {withRef: true})
