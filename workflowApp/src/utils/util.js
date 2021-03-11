@@ -18,10 +18,9 @@ const postApi= (path, params, callback) => {
     if (!_.isEmpty(token)) {
         headerConfig.headers['Authorization'] = token
     }
+    const URL = process.env.REACT_APP_BASE_URL + path
 
-    console.log("header:", headerConfig)
-
-    axios.post(path, Qs.stringify(params), headerConfig).then( (resp) => {
+    axios.post(URL, Qs.stringify(params), headerConfig).then( (resp) => {
         hideLoading()
 
         if (resp.status !== 200) {

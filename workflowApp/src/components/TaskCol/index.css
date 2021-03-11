@@ -1,0 +1,51 @@
+.col {
+    border: 1px solid #d2d2d2;
+    flex-grow: 1;
+    width: 20%;
+    height: 100%;
+    margin: 0 6px;
+    background: #eee;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.col-header {
+    height: 40px;
+    line-height: 40px;
+    background: #1DA921;
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    box-shadow: 5px 10px 3px #888;
+}
+
+
+.col-header-todo {
+    background: #46463c;
+    color: #f00;
+}
+
+.col-header-doing {
+    background: #c0be56;
+    color: rgb(20, 19, 19);
+}
+
+.col-header-done {
+    background: #92f05b;
+    color: rgb(24, 20, 20);
+}
+
+.col-header-saved {
+    background: #4b7eec;
+    color: #fff;
+}
+
+.col-main {
+    overflow: auto;
+    flex-grow: 1;
+}
+.col-main.active {
+    background: #00ad23;
+    opacity: 0.1;
+}

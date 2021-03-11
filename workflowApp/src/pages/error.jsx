@@ -1,7 +1,7 @@
 const Error = (props) => {
 
     return (
-        <div>error page</div>
+        <div>出错了...</div>
     )
 }
 

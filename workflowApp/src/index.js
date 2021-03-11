@@ -1,6 +1,7 @@
 import './public-path';
 import React from 'react';
 import ReactDOM from 'react-dom';
+// import "default-passive-events"
 import './index.css';
 
 import App from './App';

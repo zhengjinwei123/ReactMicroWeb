@@ -1,8 +1,8 @@
 import React from "react"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
-import Hello1Page from "../pages/hello1"
-import Hello2Page from "../pages/hello2"
+import AddTaskPage from "../pages/AddTask"
+import MyTaskPage from "../pages/MyTask/index.jsx"
 import ErrorPage from "../pages/error"
 
 class RouterMap extends React.Component {
@@ -19,8 +19,8 @@ class RouterMap extends React.Component {
         return (
             <Router basename={window.__POWERED_BY_QIANKUN__ ? "/workflow" : "/"}>
                 <Switch>
-                    <Route path="/add" render={ props => <Hello1Page {...this.props} />}/>
-                    <Route path="/mytask" render={ props => <Hello2Page  {...this.props} />}/>
+                    <Route path="/add" render={ props => <AddTaskPage {...this.props} />}/>
+                    <Route path="/mytask" render={ props => <MyTaskPage  {...this.props} />}/>
                     <Route component={ErrorPage}/>
                 </Switch>
             </Router>
