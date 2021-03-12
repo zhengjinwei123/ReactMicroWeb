@@ -48,6 +48,7 @@ const MyTask = (props) => {
                     sender: item.promoter,
                     priority: PRIORITY_CODE[item.priority],
                     updateAt: item.modify_time,
+                    task_id: item.id,
                 })
             })
 
@@ -100,7 +101,7 @@ const MyTask = (props) => {
                         canDragIn={activeId != null && tasks[activeId] && tasks[activeId].status !== status && tasks[activeId].status != STATUS_SAVED}>
                         { tasks.filter(t => t.status == status).map(t => 
                             <TaskItem
-                                item={t.item}
+                                task_id={t.task_id}
                                 key={t.id}
                                 active={t.id == activeId}
                                 id={t.id}
