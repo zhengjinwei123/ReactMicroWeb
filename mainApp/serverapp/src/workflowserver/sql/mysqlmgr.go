@@ -27,6 +27,10 @@ func (this *mysqlProxy) Init(addr string) error {
 	return err
 }
 
+func (this *mysqlProxy) GetDb() *sqlx.DB {
+	return this.proxy
+}
+
 func (this *mysqlProxy) Close() {
 	if this.proxy != nil {
 		err := this.proxy.Close()
@@ -45,8 +49,30 @@ func (this *mysqlProxy) Insert(sql string) error {
 	return nil
 }
 
+func (this *mysqlProxy) Insertx(db *sqlx.DB, sql string) error {
+	if _, err := db.Exec(sql); err != nil {
+		l4g.Error("Exec mysql error: %s %v \n", sql, err)
+		return err
+	}
+	return nil
+}
+
 func (this *mysqlProxy) GetCount(sql string) (int, error) {
 	rows, err := this.proxy.Query(sql)
+	if err != nil {
+		return 0, err
+	}
+
+	count := 0
+	for rows.Next(){
+		count += 1
+	}
+
+	return count, nil
+}
+
+func (this *mysqlProxy) GetCountx(db *sqlx.DB, sql string) (int, error) {
+	rows, err := db.Query(sql)
 	if err != nil {
 		return 0, err
 	}
@@ -89,6 +115,11 @@ func (this *mysqlProxy) QueryOne(sql string, v interface{}) error {
 	return err
 }
 
+func (this *mysqlProxy) QueryOnex(db *sqlx.DB, sql string, v interface{}) error {
+	err := db.Get(v, sql)
+	return err
+}
+
 func (this *mysqlProxy) QueryList(sql string, v interface{}) error {
 	err := this.proxy.Select(v, sql)
 	return err
@@ -96,6 +127,18 @@ func (this *mysqlProxy) QueryList(sql string, v interface{}) error {
 
 func (this *mysqlProxy) Update(sql string, args ...interface{}) (error, int64) {
 	results, err := this.proxy.Exec(sql, args...)
+	if err != nil {
+		return err, 0
+	}
+	affectedN, err := results.RowsAffected()
+	if err != nil {
+		return err, 0
+	}
+	return nil, affectedN
+}
+
+func (this *mysqlProxy) Updatex(db *sqlx.DB, sql string, args ...interface{}) (error, int64) {
+	results, err := db.Exec(sql, args...)
 	if err != nil {
 		return err, 0
 	}
@@ -118,7 +161,19 @@ func (this *mysqlProxy) Delete(sql string, args ...interface{}) (error, int64) {
 	return nil, affectedN
 }
 
-func (this *mysqlProxy) clearTransaction(tx *sqlx.Tx) {
+func (this *mysqlProxy) Deletex(db *sqlx.DB, sql string, args ...interface{}) (error, int64) {
+	results, err := db.Exec(sql, args...)
+	if err != nil {
+		return err, 0
+	}
+	affectedN, err := results.RowsAffected()
+	if err != nil {
+		return err, 0
+	}
+	return nil, affectedN
+}
+
+func (this *mysqlProxy) ClearTransaction(tx *sqlx.Tx) {
 	err := tx.Rollback()
 	if err != sql.ErrTxDone && err != nil {
 		log.Println(err)

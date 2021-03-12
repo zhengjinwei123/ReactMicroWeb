@@ -1,51 +1,64 @@
-import {useState} from "react"
+import {useState, useEffect} from "react"
 import TaskCol from "../../components/TaskCol/index.jsx"
 import TaskItem from "../../components/TaskItem/index.jsx"
+import {getMyTaskList, updateStatus} from "../../services/task"
 
 import { message } from 'antd';
 
-
 import "./index.css"
 
-const STATUS_TODO = 'todo';
-const STATUS_SAVED = "saved"
+const STATUS_SAVED = 5
 
 const STATUS_CODE = {
-    todo: '待处理',
-    doing: '进行中',
-    done: '已完成',
-    saved: '已归档'
+    0: '待处理',
+    1: '进行中',
+    2: '研发完成',
+    3: '验收中',
+    4: "验收完成",
+    5: "归档"
 }
 
-const taskList = [{
-    id: 0,
-    status: STATUS_TODO,
-    title: '每周七天阅读五次，每次阅读完要做100字的读书笔记每周七天阅读五次，每次阅读完要做100字的读书笔记',
-    sender: '小夏',
-    priority: "danger"
-}, {
-    id: 1,
-    status: STATUS_TODO,
-    title: '每周七天健身4次，每次健身时间需要大于20分钟',
-    sender: '橘子🍊',
-    priority: "warn"
-}, {
-    id: 2,
-    status: STATUS_TODO,
-    title: '每周七天健身4次，每次健身时间需要大于20分钟',
-    sender: 'aaaa',
-    priority: "normal"
-}]
+const PRIORITY_CODE = {
+    3: "danger",
+    2: "warn",
+    1: "normal",
+    0: "normal"
+}
+
+//任务状态 0:待处理 1：进行中 2：完成 3：测试中  4：验收完毕
 
 const MyTask = (props) => {
 
-    const [tasks, setTasks] = useState(taskList)
+    const [tasks, setTasks] = useState([])
     const [activeId, setActiveId] = useState(null)
+
+    useEffect(() => {
+        getMyTaskList((err, data) => {
+            console.log("akkkk", err, data)
+
+            if (err) {
+                return;
+            }
+            data.map((item, k) => {
+                tasks.push({
+                    id: k,
+                    item: item,
+                    status: item.status,
+                    title: "[" +item.taskName + "]\r\n" + item.taskDesc,
+                    sender: item.promoter,
+                    priority: PRIORITY_CODE[item.priority],
+                    updateAt: item.modify_time,
+                })
+            })
+
+            setTasks([...tasks])
+        })
+    }, [])
+
 
     const onDragStart = (id) => {
 
-        if (tasks[id] && tasks[id].status === STATUS_SAVED) {
-            console.log(tasks[id])
+        if (tasks[id] && tasks[id].status == STATUS_SAVED) {
             message.error('归档的任务不能移动!!!');
         } else {
             setActiveId(id)
@@ -54,11 +67,21 @@ const MyTask = (props) => {
 
     const dragTo = (status) => {
         let task = tasks[activeId];
-        if (task.status !== status) {
-            task.status = status;
-            setTasks(tasks)
+
+        if (task.status == status) {
+            cancelSelect();
+            return
         }
-        cancelSelect();
+
+        updateStatus(task.task_id, parseInt(status), (err, data) => {
+           
+            cancelSelect();
+            if (err) {
+                return;
+            }
+            task.status = status;
+            setTasks([...tasks])
+        });
     }
     
     const cancelSelect = () => {
@@ -74,15 +97,17 @@ const MyTask = (props) => {
                         status={status} 
                         key={status} 
                         dragTo={dragTo}
-                        canDragIn={activeId != null && tasks[activeId] && tasks[activeId].status !== status}>
-                        { tasks.filter(t => t.status === status).map(t => 
+                        canDragIn={activeId != null && tasks[activeId] && tasks[activeId].status !== status && tasks[activeId].status != STATUS_SAVED}>
+                        { tasks.filter(t => t.status == status).map(t => 
                             <TaskItem
+                                item={t.item}
                                 key={t.id}
-                                active={t.id === activeId}
+                                active={t.id == activeId}
                                 id={t.id}
                                 title={t.title} 
                                 priority={t.priority} 
                                 sender={t.sender}
+                                updateAt={t.updateAt}
                                 onDragStart={onDragStart}
                                 onDragEnd={cancelSelect}
                             />)

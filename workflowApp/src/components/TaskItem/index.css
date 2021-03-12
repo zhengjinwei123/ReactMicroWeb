@@ -1,8 +1,8 @@
 .item {
     border: 1px solid #1da921;
     width: calc(100% - 20px);
-    height: 100px;
-    padding: 0px;
+    height: 140px;
+    padding: 0;
     border-radius: 5px;
     box-shadow: 0 0 5px 0 #b3b3b3;
     margin: 10px auto;
@@ -23,15 +23,23 @@
 }
 
 .item-main {
-    padding: 5px;
+    padding: 2px;
     font-size: 14px;
     color: #424242;
-    height: 36px;
+    height: 60px;
+    width: 100%;
     overflow: auto;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
+}
+
+.item-footer {
+    float: right;
+    margin-top: 10px;
+    margin-right: 4px;
+    color:rgb(5, 63, 223)
 }
 
 .item-header-look {

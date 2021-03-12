@@ -1,0 +1,30 @@
+<log created="2021/03/12 16:51:37.691713">
+[2021/03/12 16:51:37.697702] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:91[0m) [32mserver start at :8802[0m
+[2021/03/12 16:51:45.459835] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/taskservice/task.go:62[0m) [35m1 3522340698336428032[0m
+[2021/03/12 16:51:58.361277] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/taskservice/task.go:62[0m) [35m1 4658500051440402432[0m
+[2021/03/12 16:52:47.788164] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/taskservice/task.go:62[0m) [35m1 4676752989262610432[0m
+[2021/03/12 16:52:49.591791] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/taskservice/task.go:62[0m) [35m1 4709100931814162432[0m
+[2021/03/12 16:52:51.513727] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/taskservice/task.go:62[0m) [35m2 4688125041349394432[0m
+[2021/03/12 16:52:52.993869] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/taskservice/task.go:62[0m) [35m2 4697109627651653632[0m
+[2021/03/12 16:52:54.456039] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/taskservice/task.go:62[0m) [35m2 4718791135944671232[0m
+[2021/03/12 16:52:57.754282] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/taskservice/task.go:62[0m) [35m2 3522340698336428032[0m
+[2021/03/12 16:53:02.851799] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/taskservice/task.go:62[0m) [35m2 4658500051440402432[0m
+[2021/03/12 16:57:36.037814] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/taskservice/task.go:62[0m) [35m3 3522340698336428032[0m
+[2021/03/12 16:57:39.346179] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/taskservice/task.go:62[0m) [35m5 3522340698336428032[0m
+[2021/03/12 16:57:41.550166] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/taskservice/task.go:62[0m) [35m3 4658500051440402432[0m
+[2021/03/12 16:57:42.908081] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/taskservice/task.go:62[0m) [35m4 4697109627651653632[0m
+[2021/03/12 16:57:43.836099] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/taskservice/task.go:62[0m) [35m4 4718791135944671232[0m
+[2021/03/12 16:57:45.020214] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/taskservice/task.go:62[0m) [35m4 7944172964415438848[0m
+[2021/03/12 16:57:46.836318] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/taskservice/task.go:62[0m) [35m3 7021324068439621632[0m
+[2021/03/12 16:57:59.032526] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/taskservice/task.go:62[0m) [35m0 4709100931814162432[0m
+[2021/03/12 16:58:39.599145] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/taskservice/task.go:62[0m) [35m1 5921604622127890432[0m
+[2021/03/12 16:58:40.612619] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/taskservice/task.go:62[0m) [35m2 5921604622127890432[0m
+[2021/03/12 16:58:42.459675] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/taskservice/task.go:62[0m) [35m1 8575033719759208448[0m
+[2021/03/12 16:58:43.347260] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/taskservice/task.go:62[0m) [35m1 5921604622127890432[0m
+[2021/03/12 16:58:44.490938] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/taskservice/task.go:62[0m) [35m2 8575033719759208448[0m
+[2021/03/12 16:58:45.949241] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/taskservice/task.go:62[0m) [35m0 5921604622127890432[0m
+[2021/03/12 16:58:46.927183] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/taskservice/task.go:62[0m) [35m0 8575033719759208448[0m
+[2021/03/12 16:59:15.643400] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/taskservice/task.go:62[0m) [35m5 4718791135944671232[0m
+[2021/03/12 16:59:17.185442] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/taskservice/task.go:62[0m) [35m5 7944172964415438848[0m
+[2021/03/12 16:59:19.401909] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/taskservice/task.go:62[0m) [35m5 7021324068439621632[0m
+</log>

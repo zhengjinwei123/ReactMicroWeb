@@ -1,0 +1,5 @@
+<log created="2021/03/12 09:41:28.631094">
+[2021/03/12 09:41:28.631094] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:18[0m) [35mJwtAuthenticationMiddleware map[][0m
+[2021/03/12 09:41:28.634088] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:18[0m) [35mJwtAuthenticationMiddleware map[][0m
+[2021/03/12 09:49:46.948544] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:90[0m) [32mcatch signal interrupt, server ready to shutdown.[0m
+</log>

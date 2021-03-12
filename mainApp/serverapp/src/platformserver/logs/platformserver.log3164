@@ -1,0 +1,6 @@
+<log created="2021/03/11 15:37:57.547567">
+[2021/03/11 15:37:57.554557] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/manager/menumgr/menumgr.go:104[0m) [35mmenu init success[0m
+[2021/03/11 15:37:57.555056] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/main.go:94[0m) [32mserver start at :8801[0m
+[2021/03/11 15:38:07.511155] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:130[0m) [35magent: map[sign:[7ee86ea7ca89728ef5f08aa0aef7a120]][0m
+[2021/03/11 15:39:49.538186] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/main.go:104[0m) [32mcatch signal interrupt, server ready to shutdown.[0m
+</log>

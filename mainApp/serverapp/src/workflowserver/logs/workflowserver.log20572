@@ -1,0 +1,8 @@
+<log created="2021/03/11 18:24:48.418432">
+[2021/03/11 18:24:48.424921] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:80[0m) [32mserver start at :8802[0m
+[2021/03/11 18:24:56.571895] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:18[0m) [35mJwtAuthenticationMiddleware map[][0m
+[2021/03/11 18:24:56.574389] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:18[0m) [35mJwtAuthenticationMiddleware map[][0m
+[2021/03/11 18:25:01.913354] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/taskservice/task.go:110[0m) [35mupload called map[][0m
+[2021/03/11 18:25:01.914851] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/taskservice/task.go:127[0m) [35mzjw 11115555[0m
+[2021/03/11 18:27:09.952874] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:90[0m) [32mcatch signal interrupt, server ready to shutdown.[0m
+</log>

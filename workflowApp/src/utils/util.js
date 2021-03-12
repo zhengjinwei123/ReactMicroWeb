@@ -4,6 +4,53 @@ import _ from "lodash"
 import {message } from "antd"
 import { showLoading, hideLoading } from "../components/PageLoading"
 
+const uploadApi = (fileList, params, callback) => {
+    showLoading()
+
+    const formData = new FormData()
+    fileList.forEach(file => {
+        formData.append('files', file)
+    });
+
+    formData.append("taskid", 1)
+
+
+    let token = getStorage("token")
+    let headerConfig = {
+        headers:{
+            "Content-Type": "multipart/form-data"
+        }
+    }
+
+    if (!_.isEmpty(token)) {
+        headerConfig.headers['Authorization'] = token
+    }
+
+    const URL = process.env.REACT_APP_BASE_URL + "/upload"
+
+    axios.post(URL, formData, headerConfig).then( (resp) => {
+        hideLoading()
+
+        if (resp.status !== 200) {
+            console.error("request " + path, params, " response:", resp)
+            callback("request failed")
+        } else {
+            console.log(path, params, resp)
+
+            if (!resp.data) {
+                callback("resp data invalid")
+            } else {
+                callback(null, resp.data) 
+            }
+        }
+    }).catch ( err => {
+        hideLoading()
+
+        console.error("request " + path, params, " catch error:", err)
+        callback(_.isString(err) ? err : JSON.stringify(err))
+    })
+
+}
 
 const postApi= (path, params, callback) => {
     showLoading()
@@ -95,5 +142,10 @@ const getStorage = (key) => {
 }
 
 export {
-    postApi
+    postApi,
+    getStorage,
+    clearStorage,
+    removeStorage,
+    setStorage,
+    uploadApi
 }

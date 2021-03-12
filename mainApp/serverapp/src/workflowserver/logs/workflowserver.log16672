@@ -1,0 +1,4 @@
+<log created="2021/03/11 17:31:31.880452">
+[2021/03/11 17:31:31.885945] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:77[0m) [32mserver start at :8802[0m
+[2021/03/11 17:31:33.594716] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:87[0m) [32mcatch signal interrupt, server ready to shutdown.[0m
+</log>

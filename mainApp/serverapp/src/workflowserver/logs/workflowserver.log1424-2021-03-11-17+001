@@ -1,0 +1,14 @@
+<log created="2021/03/11 17:36:33.940871">
+[2021/03/11 17:36:33.946861] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:77[0m) [32mserver start at :8802[0m
+[2021/03/11 17:36:38.102226] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:16[0m) [35mJwtAuthenticationMiddleware map[][0m
+[2021/03/11 17:36:38.105223] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:16[0m) [35mJwtAuthenticationMiddleware map[][0m
+[2021/03/11 17:37:23.852454] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:16[0m) [35mJwtAuthenticationMiddleware map[][0m
+[2021/03/11 17:37:23.853952] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:16[0m) [35mJwtAuthenticationMiddleware map[][0m
+[2021/03/11 17:37:29.213392] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:16[0m) [35mJwtAuthenticationMiddleware map[][0m
+[2021/03/11 17:55:54.931933] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:16[0m) [35mJwtAuthenticationMiddleware map[][0m
+[2021/03/11 17:55:54.933431] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:16[0m) [35mJwtAuthenticationMiddleware map[][0m
+[2021/03/11 17:58:49.708645] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:16[0m) [35mJwtAuthenticationMiddleware map[][0m
+[2021/03/11 17:58:49.711140] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:16[0m) [35mJwtAuthenticationMiddleware map[][0m
+[2021/03/11 17:59:43.384991] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:16[0m) [35mJwtAuthenticationMiddleware map[][0m
+[2021/03/11 17:59:43.386491] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:16[0m) [35mJwtAuthenticationMiddleware map[][0m
+</log>

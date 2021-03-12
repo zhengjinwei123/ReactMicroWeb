@@ -1,0 +1,5 @@
+<log created="2021/03/12 15:16:03.778334">
+[2021/03/12 15:16:03.778334] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:130[0m) [35magent: map[sign:[7ee86ea7ca89728ef5f08aa0aef7a120]][0m
+[2021/03/12 15:19:19.452688] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:130[0m) [35magent: map[sign:[7ee86ea7ca89728ef5f08aa0aef7a120]][0m
+[2021/03/12 15:19:20.571912] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:130[0m) [35magent: map[sign:[7ee86ea7ca89728ef5f08aa0aef7a120]][0m
+</log>

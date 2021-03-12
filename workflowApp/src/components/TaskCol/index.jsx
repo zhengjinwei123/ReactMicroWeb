@@ -1,10 +1,10 @@
 
 import {useState} from "react"
-import {Modal} from "antd"
+import { Modal } from 'antd';
 import { ExclamationCircleOutlined } from '@ant-design/icons';
 import "./index.css"
 
-const STATUS_SAVED = "saved"
+const STATUS_SAVED = "5"
 
 const TaskCol = (props) => {
 
@@ -26,31 +26,45 @@ const TaskCol = (props) => {
 
     const drag = () => {
         if (props) {
-            console.log("hahaha")
             try {
                 props.dragTo(props.status)
                 setInCol(false)
-                console.log("hahahaaaaaaaaaaaa")
-            } catch(e) {}
+            } catch(e) {
+
+            }
         }
     }
 
     const handleDrop = (e) => {
         e.preventDefault()
 
+        if (!props.canDragIn) {
+            setInCol(false)
+            return
+        }
         if (props.status === STATUS_SAVED) {
             Modal.confirm({
-                title: '归档确认',
+                title: '确认',
                 icon: <ExclamationCircleOutlined />,
                 content: '确认归档此任务吗?归档后不可移动哦',
                 okText: '确认',
                 cancelText: '取消',
+                onCancel: () => {
+                    setInCol(false)
+                },
                 onOk: () => {
                     drag()
+                    setInCol(false)
                 }
-            });
+              });
+
+            // if (window.confirm("确认归档此任务吗?归档后不可移动哦")) {
+            //     drag()
+            // }
+            // setInCol(false)
         } else {
             drag()
+            setInCol(false)
         }
     }
 
@@ -63,7 +77,7 @@ const TaskCol = (props) => {
             onDragLeave={handleDragLeave}
             onDragOver={handleDragEnter}
             onDrop={handleDrop}
-            draggable="true"
+            draggable={"true"}
         >
             <header className={"col-header " + "col-header-" + status}>
                 {props.status_code[status]}

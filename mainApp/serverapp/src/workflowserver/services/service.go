@@ -3,7 +3,9 @@ package services
 import (
 	"net/http"
 	"serverapp/src/workflowserver/net"
+	"serverapp/src/workflowserver/agent/platformagent"
 )
+
 
 func GetUserName(r *http.Request) string {
 	userName := r.Context().Value("username")
@@ -13,11 +15,18 @@ func GetUserName(r *http.Request) string {
 	return ""
 }
 
-func UserInfo(w http.ResponseWriter, r *http.Request) {
+
+func GetUsers(w http.ResponseWriter, r *http.Request) {
 	resp := &net.NetResponse{}
 
-	userName := GetUserName(r)
+	ret, err := platformagent.GetUserList()
+	if err != nil {
+		resp.Msg = err.Error()
+		resp.SendError(w)
+		return
+	}
 
-	resp.Msg = "get userinfo ok, userName:" + userName
+	resp.Msg = string(ret)
+
 	resp.SendMessage(w)
 }

@@ -1,0 +1,8 @@
+<log created="2021/03/12 14:22:40.975085">
+[2021/03/12 14:22:40.974086] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:130[0m) [35magent: map[sign:[7ee86ea7ca89728ef5f08aa0aef7a120]][0m
+[2021/03/12 14:25:30.718088] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:130[0m) [35magent: map[sign:[7ee86ea7ca89728ef5f08aa0aef7a120]][0m
+[2021/03/12 14:41:41.524342] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:130[0m) [35magent: map[sign:[7ee86ea7ca89728ef5f08aa0aef7a120]][0m
+[2021/03/12 14:41:48.445279] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:130[0m) [35magent: map[sign:[7ee86ea7ca89728ef5f08aa0aef7a120]][0m
+[2021/03/12 14:42:57.175718] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:130[0m) [35magent: map[sign:[7ee86ea7ca89728ef5f08aa0aef7a120]][0m
+[2021/03/12 14:56:38.587313] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:130[0m) [35magent: map[sign:[7ee86ea7ca89728ef5f08aa0aef7a120]][0m
+</log>

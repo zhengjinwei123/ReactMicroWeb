@@ -2,15 +2,19 @@ package main
 
 import (
 	"context"
+	"crypto/md5"
+	"fmt"
 	"github.com/dgrijalva/jwt-go"
 	"net/http"
+	"net/url"
 	"serverapp/src/base/authorize"
 	"serverapp/src/base/common"
 	"serverapp/src/platformserver/config"
 	"serverapp/src/platformserver/manager/eventmgr"
 	"serverapp/src/platformserver/manager/usermgr"
 	"serverapp/src/platformserver/net"
-	//l4g "serverapp/src/base/log4go"
+	"sort"
+	"strings"
 )
 
 func IsSafeURL (r *http.Request) bool {
@@ -81,6 +85,59 @@ func JwtAuthenticationMiddleware(next http.Handler) http.Handler {
 
 		ctx := context.WithValue(r.Context(), "username", clain.UserName)
 		r = r.WithContext(ctx)
+		next.ServeHTTP(w, r)
+	})
+}
+
+
+func sign(params url.Values) string {
+
+	keys := make([]string, 0, len(params))
+
+	for k, _ := range params {
+		if k == "sign" {
+			continue
+		}
+		keys = append(keys, k)
+	}
+
+	sort.Strings(keys)
+
+	dataList := make([]string, 0, len(keys))
+	for _, k := range keys {
+		v := params[k]
+
+		dataList = append(dataList, fmt.Sprintf("%s=%s", k, v))
+	}
+
+	ret := fmt.Sprintf("%s#%s", strings.Join(dataList, "#"), "123456")
+	return fmt.Sprintf("%x", md5.Sum([]byte(ret)))
+}
+
+func AgentMiddleware(next http.Handler) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+
+		err := r.ParseForm()
+		resp := &net.NetResponse{}
+		if err != nil {
+			resp.Msg = "parse parameter error"
+			resp.SendError(w)
+			return
+		}
+
+
+		//l4g.Debug("agent: %v", r.Form)
+
+		paramSign := r.FormValue("sign")
+		mySign := sign(r.Form)
+
+		if mySign != paramSign {
+			resp.Msg = "sign error"
+			resp.SendError(w)
+			return
+		}
+
+
 		next.ServeHTTP(w, r)
 	})
 }

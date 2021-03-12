@@ -29,12 +29,18 @@ type xmlMysql struct {
 	Password string `xml:"password"`
 }
 
+type xmlPlatformServer struct {
+	Addr string `xml:"addr"`
+	SecretKey string `xml:"secret-key"`
+}
+
 type serverConfig struct {
 	Http           string   `xml:"http"`
 	Log            xmlLog   `xml:"log"`
 	Mysql          xmlMysql `xml:"mysql"`
 	Session        xmlSession `xml:"session"`
 	TimeZone       string `xml:"time-zone"`
+	PlatformServer xmlPlatformServer `xml:"platform-server"`
 }
 
 func newServerConfig() *serverConfig {

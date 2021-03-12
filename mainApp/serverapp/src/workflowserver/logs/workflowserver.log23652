@@ -1,0 +1,7 @@
+<log created="2021/03/12 14:46:46.934786">
+[2021/03/12 14:46:46.940277] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:91[0m) [32mserver start at :8802[0m
+[2021/03/12 14:46:49.936532] [EROR] ([31mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/sql/mysqlmgr.go:46[0m) [31mExec mysql error: insert into `t_user_task` (`user_name`,`task_id`,`create_time`) values('admin', '%!s(int64=499919534216347648)', '2021-03-12 02:46:49', %!d(MISSING), '%!s(MISSING)', '%!s(MISSING)', '%!s(MISSING)') Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%!d(MISSING), '%!s(MISSING)', '%!s(MISSING)', '%!s(MISSING)')' at line 1 
+[0m
+[2021/03/12 14:46:49.936985] [EROR] ([31mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/net/response.go:46[0m) [31m{"data":"Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '%!d(MISSING), '%!s(MISSING)', '%!s(MISSING)', '%!s(MISSING)')' at line 1","ret":-1}[0m
+[2021/03/12 14:48:58.895001] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:101[0m) [32mcatch signal interrupt, server ready to shutdown.[0m
+</log>

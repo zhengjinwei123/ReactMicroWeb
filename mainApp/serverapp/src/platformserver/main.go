@@ -77,6 +77,12 @@ func main() {
 		r.Mount("/group", GroupRouter())
 	})
 
+	r.Route("/agent", func(r chi.Router) {
+
+		r.Use(AgentMiddleware)
+		r.Post("/users", services.GetUsers)
+	})
+
 	httpServer := &http.Server{Addr: serverConfig.Http, Handler: r}
 	go httpServer.ListenAndServe()
 

@@ -1,0 +1,17 @@
+<log created="2021/03/11 17:14:05.184481">
+[2021/03/11 17:14:05.191970] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/manager/menumgr/menumgr.go:104[0m) [35mmenu init success[0m
+[2021/03/11 17:14:05.192968] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/main.go:94[0m) [32mserver start at :8801[0m
+[2021/03/11 17:14:40.926954] [EROR] ([31mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/net/response.go:48[0m) [31m{"data":"username not exists","ret":-1}[0m
+[2021/03/11 17:14:42.379134] [EROR] ([31mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/net/response.go:48[0m) [31m{"data":"username not exists","ret":-1}[0m
+[2021/03/11 17:14:47.273821] [EROR] ([31mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/net/response.go:48[0m) [31m{"data":"username not exists","ret":-1}[0m
+[2021/03/11 17:14:55.119806] [EROR] ([31mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/net/response.go:48[0m) [31m{"data":"password error","ret":-1}[0m
+[2021/03/11 17:20:16.311388] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:130[0m) [35magent: map[sign:[7ee86ea7ca89728ef5f08aa0aef7a120]][0m
+[2021/03/11 17:23:13.224542] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:130[0m) [35magent: map[sign:[7ee86ea7ca89728ef5f08aa0aef7a120]][0m
+[2021/03/11 17:32:35.243473] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:130[0m) [35magent: map[sign:[7ee86ea7ca89728ef5f08aa0aef7a120]][0m
+[2021/03/11 17:35:17.640458] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:130[0m) [35magent: map[sign:[7ee86ea7ca89728ef5f08aa0aef7a120]][0m
+[2021/03/11 17:36:38.115205] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:130[0m) [35magent: map[sign:[7ee86ea7ca89728ef5f08aa0aef7a120]][0m
+[2021/03/11 17:37:23.854950] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:130[0m) [35magent: map[sign:[7ee86ea7ca89728ef5f08aa0aef7a120]][0m
+[2021/03/11 17:55:54.936425] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:130[0m) [35magent: map[sign:[7ee86ea7ca89728ef5f08aa0aef7a120]][0m
+[2021/03/11 17:58:49.713639] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:130[0m) [35magent: map[sign:[7ee86ea7ca89728ef5f08aa0aef7a120]][0m
+[2021/03/11 17:59:43.387988] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/platformserver/middlewares.go:130[0m) [35magent: map[sign:[7ee86ea7ca89728ef5f08aa0aef7a120]][0m
+</log>

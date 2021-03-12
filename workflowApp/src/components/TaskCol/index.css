@@ -17,27 +17,37 @@
     color: #fff;
     text-align: center;
     font-size: 22px;
-    box-shadow: 5px 10px 3px #888;
+    box-shadow: 5px 6px 3px rgb(82, 85, 47);
 }
 
 
-.col-header-todo {
+.col-header-0 {
     background: #46463c;
     color: #f00;
 }
 
-.col-header-doing {
+.col-header-1 {
     background: #c0be56;
     color: rgb(20, 19, 19);
 }
 
-.col-header-done {
-    background: #92f05b;
+.col-header-2 {
+    background: #6eec4e;
     color: rgb(24, 20, 20);
 }
 
-.col-header-saved {
-    background: #4b7eec;
+.col-header-3 {
+    background: #6892ec;
+    color: #fff;
+}
+
+.col-header-4 {
+    background: #044ff0;
+    color: #fff;
+}
+
+.col-header-5 {
+    background: #777779;
     color: #fff;
 }
 

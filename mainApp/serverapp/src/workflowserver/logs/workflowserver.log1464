@@ -1,0 +1,6 @@
+<log created="2021/03/12 13:53:27.994470">
+[2021/03/12 13:53:27.999962] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:85[0m) [32mserver start at :8802[0m
+[2021/03/12 13:53:54.911967] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/services/taskservice/task.go:115[0m) [35misUploadDataValid files[0m
+[2021/03/12 13:53:54.911967] [EROR] ([31mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/net/response.go:46[0m) [31m{"data":"data invalid","ret":-1}[0m
+[2021/03/12 13:54:34.564251] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:95[0m) [32mcatch signal interrupt, server ready to shutdown.[0m
+</log>

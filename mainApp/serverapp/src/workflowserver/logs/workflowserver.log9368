@@ -1,0 +1,9 @@
+<log created="2021/03/12 15:15:59.080785">
+[2021/03/12 15:15:59.086778] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:91[0m) [32mserver start at :8802[0m
+[2021/03/12 15:18:40.985155] [EROR] ([31mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/net/response.go:46[0m) [31m{"data":"task 哈哈哈tasl111 has exists, please try replace other task name","ret":-1}[0m
+[2021/03/12 15:18:41.546762] [EROR] ([31mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/net/response.go:46[0m) [31m{"data":"task 哈哈哈tasl111 has exists, please try replace other task name","ret":-1}[0m
+[2021/03/12 15:18:42.224687] [EROR] ([31mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/net/response.go:46[0m) [31m{"data":"task 哈哈哈tasl111 has exists, please try replace other task name","ret":-1}[0m
+[2021/03/12 15:18:48.235152] [EROR] ([31mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/net/response.go:46[0m) [31m{"data":"task 哈哈哈tasl111 has exists, please try replace other task name","ret":-1}[0m
+[2021/03/12 15:18:56.788852] [EROR] ([31mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/net/response.go:46[0m) [31m{"data":"task 哈哈哈tasl1111212 has exists, please try replace other task name","ret":-1}[0m
+[2021/03/12 15:32:19.723985] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:101[0m) [32mcatch signal interrupt, server ready to shutdown.[0m
+</log>

@@ -14,7 +14,9 @@ import (
 	l4g "serverapp/src/base/log4go"
 	"serverapp/src/workflowserver/config"
 	"serverapp/src/workflowserver/services"
+	"serverapp/src/workflowserver/services/taskservice"
 	"serverapp/src/workflowserver/sql"
+	"serverapp/src/workflowserver/utils/idgenerator"
 	"syscall"
 	"time"
 )
@@ -52,6 +54,10 @@ func main() {
 		common.PanicExt(err.Error())
 	}
 
+	if err := idgenerator.InitIdWorker(); err != nil {
+		common.PanicExt(err.Error())
+	}
+
 	r := chi.NewRouter()
 	r.Use(middleware.RequestID)
 	r.Use(middleware.RealIP)
@@ -61,8 +67,18 @@ func main() {
 	r.Route("/api", func(r chi.Router) {
 		r.Use(JwtAuthenticationMiddleware)
 
-		r.Post("/user_info", services.UserInfo)
+		r.Mount("/task", TaskRouter())
+
+		r.Post("/users", services.GetUsers)
 	})
+
+	r.Route("/upload", func(r chi.Router) {
+		r.Use(UploadFileMiddleware)
+
+		r.Post("/taskadd", taskservice.TaskAdd)
+
+	})
+
 
 	httpServer := &http.Server{Addr: serverConfig.Http, Handler: r}
 	go httpServer.ListenAndServe()

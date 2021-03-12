@@ -1,4 +1,5 @@
 import ReactDOM from 'react-dom';
+// import "default-passive-events"
 import App from "./App"
 import * as serviceWorker from './serviceWorker';
 import {GetServerRunInfo} from "./services/common"
@@ -41,7 +42,7 @@ GetServerRunInfo((err, data) => {
       },
       activeRule: genActiveRule(`/${data.apps[i].name}`),
       props: {
-        
+
       }
     })
   }

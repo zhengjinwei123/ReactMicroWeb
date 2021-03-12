@@ -1,0 +1,15 @@
+<log created="2021/03/11 18:00:01.272909">
+[2021/03/11 18:00:01.272409] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:16[0m) [35mJwtAuthenticationMiddleware map[][0m
+[2021/03/11 18:00:01.273906] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:16[0m) [35mJwtAuthenticationMiddleware map[][0m
+[2021/03/11 18:01:19.183491] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:16[0m) [35mJwtAuthenticationMiddleware map[][0m
+[2021/03/11 18:01:19.184987] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:16[0m) [35mJwtAuthenticationMiddleware map[][0m
+[2021/03/11 18:01:26.865214] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:16[0m) [35mJwtAuthenticationMiddleware map[][0m
+[2021/03/11 18:02:42.284181] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:16[0m) [35mJwtAuthenticationMiddleware map[][0m
+[2021/03/11 18:02:42.285180] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:16[0m) [35mJwtAuthenticationMiddleware map[][0m
+[2021/03/11 18:03:22.673628] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:16[0m) [35mJwtAuthenticationMiddleware map[][0m
+[2021/03/11 18:03:22.674628] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:16[0m) [35mJwtAuthenticationMiddleware map[][0m
+[2021/03/11 18:04:31.104760] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:16[0m) [35mJwtAuthenticationMiddleware map[][0m
+[2021/03/11 18:04:31.106757] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:16[0m) [35mJwtAuthenticationMiddleware map[][0m
+[2021/03/11 18:04:35.965492] [DEBG] ([35mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/middlewares.go:16[0m) [35mJwtAuthenticationMiddleware map[][0m
+[2021/03/11 18:06:37.601589] [INFO] ([32mD:/qiankun1/xgame2/reactMicroWeb/mainApp/serverapp/src/workflowserver/main.go:87[0m) [32mcatch signal interrupt, server ready to shutdown.[0m
+</log>
